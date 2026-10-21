@@ -504,52 +504,56 @@ a { color: inherit; }
   width: calc(100vw - 32px);
   margin: auto;
   outline: none;
+  color: #ffffff !important;
 }
 .review-modal::backdrop {
-  background: rgba(10, 17, 40, 0.85);
-  backdrop-filter: blur(8px);
+  background: rgba(10, 17, 40, 0.88);
+  backdrop-filter: blur(10px);
 }
 .review-modal-box {
-  background: var(--color-surface);
-  border: 1px solid var(--color-line);
+  background: #0e1738 !important;
+  color: #ffffff !important;
+  border: 1px solid #2d3f75 !important;
   border-radius: var(--radius-lg);
-  padding: var(--s6) var(--s5);
+  padding: 28px 24px;
   position: relative;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
 }
 .review-modal-close {
   position: absolute;
-  top: var(--s3);
-  right: var(--s3);
-  width: 32px;
-  height: 32px;
-  background: var(--color-bg);
-  color: var(--color-text);
-  border: 1px solid var(--color-line);
+  top: 16px;
+  right: 16px;
+  width: 34px;
+  height: 34px;
+  background: #060b1d;
+  color: #ffffff !important;
+  border: 1px solid #3b4e85;
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   cursor: pointer;
   transition: background .18s, color .18s;
 }
 .review-modal-close:hover {
   background: var(--color-accent);
-  color: var(--color-accent-ink);
+  color: var(--color-accent-ink) !important;
 }
 .review-modal-box h3 {
-  font-size: 1.35rem;
-  margin: 0 0 var(--s2);
+  font-size: 1.45rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  margin: 0 0 8px 0 !important;
 }
 .review-modal-lead {
-  font-size: 0.875rem;
-  color: var(--color-muted);
-  margin-bottom: var(--s5);
-  line-height: 1.5;
+  font-size: 0.9rem !important;
+  color: #cbd5e1 !important;
+  margin-bottom: 20px !important;
+  line-height: 1.5 !important;
 }
 .review-form {
   display: grid;
-  gap: var(--s4);
+  gap: 16px;
 }
 .form-group {
   display: grid;
@@ -558,19 +562,20 @@ a { color: inherit; }
 .form-group label {
   font-size: 0.8125rem;
   font-family: var(--font-mono);
-  color: #cbd5e1;
+  color: #e2e8f0 !important;
+  font-weight: 600;
 }
 .form-group input[type="text"],
 .form-group textarea {
-  background-color: #070c1e !important;
+  background-color: #060b1d !important;
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
   caret-color: var(--color-accent) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid #3b4e85 !important;
   border-radius: var(--radius-sm);
   padding: 12px 14px;
   font-family: var(--font-sans);
-  font-size: 0.9375rem;
+  font-size: 0.95rem;
   line-height: 1.5;
   transition: border-color .18s, box-shadow .18s;
   width: 100%;
@@ -578,36 +583,37 @@ a { color: inherit; }
 }
 .form-group input[type="text"]::placeholder,
 .form-group textarea::placeholder {
-  color: #94a3b8 !important;
-  -webkit-text-fill-color: #94a3b8 !important;
+  color: #8fa0c4 !important;
+  -webkit-text-fill-color: #8fa0c4 !important;
   opacity: 1 !important;
 }
 .form-group input[type="text"]:focus,
 .form-group textarea:focus {
   border-color: var(--color-accent) !important;
-  box-shadow: 0 0 0 2px rgba(245, 181, 68, 0.25) !important;
+  box-shadow: 0 0 0 2px rgba(245, 181, 68, 0.3) !important;
   outline: none !important;
 }
 .rating-picker {
   display: flex;
-  gap: var(--s3);
+  gap: 14px;
   flex-wrap: wrap;
-  background: #070c1e;
+  background: #060b1d !important;
   padding: 10px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid #3b4e85 !important;
   border-radius: var(--radius-sm);
 }
 .rating-picker label {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 5px;
   font-family: var(--font-mono);
   font-size: 0.875rem;
-  color: var(--color-accent);
+  color: #f5b544 !important;
   cursor: pointer;
+  font-weight: 600;
 }
 .rating-picker input[type="radio"] {
-  accent-color: var(--color-accent);
+  accent-color: #f5b544 !important;
   cursor: pointer;
 }
 .honeypot {
@@ -621,6 +627,7 @@ a { color: inherit; }
 .review-success {
   text-align: center;
   padding: var(--s5) var(--s3);
+  color: #ffffff !important;
 }
 .review-success .success-icon {
   width: 48px;
@@ -637,10 +644,11 @@ a { color: inherit; }
 .review-success h4 {
   margin: 0 0 var(--s2);
   font-size: 1.15rem;
+  color: #ffffff !important;
 }
 .review-success p {
   margin: 0;
-  color: var(--color-muted);
+  color: #cbd5e1 !important;
   font-size: 0.875rem;
   line-height: 1.5;
 }

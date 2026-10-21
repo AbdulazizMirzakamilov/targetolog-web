@@ -10,7 +10,7 @@ import {
   addDoc,
   serverTimestamp
 } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js';
-import { firebaseConfig, isConfigured } from './firebase-config.js?v=2';
+import { firebaseConfig, isConfigured } from './firebase-config.js?v=3';
 
 const reviewsContainer = document.getElementById('reviews-list');
 const modal = document.getElementById('review-modal');
@@ -80,16 +80,16 @@ async function loadReviews() {
         : '';
 
       return `
-        <article class="review-card">
+        <article class="review-card" style="background: #101b3d; border: 1px solid #23325f; border-radius: 14px; padding: 24px; opacity: 1; transform: none;">
           <div class="review-card-head">
             <div>
-              <strong class="review-author">${esc(data.name)}</strong>
-              ${dateStr ? `<span class="review-date">${esc(dateStr)}</span>` : ''}
+              <strong class="review-author" style="color: #eef0f6; font-size: 1rem; font-weight: 700;">${esc(data.name)}</strong>
+              ${dateStr ? `<span class="review-date" style="color: #a3aecb; font-size: 0.75rem; display: block; margin-top: 2px;">${esc(dateStr)}</span>` : ''}
             </div>
-            <div class="review-stars" aria-label="Оценка ${data.rating} из 5">${stars}</div>
+            <div class="review-stars" style="color: #f5b544; font-size: 0.95rem; letter-spacing: 2px;" aria-label="Оценка ${data.rating} из 5">${stars}</div>
           </div>
-          <p class="review-text">${esc(data.text)}</p>
-          ${data.photoUrl ? `<div class="review-proof"><img src="${esc(data.photoUrl)}" alt="Скриншот отзыва" loading="lazy"></div>` : ''}
+          <p class="review-text" style="color: #eef0f6; font-size: 0.9375rem; line-height: 1.6; margin-top: 12px;">${esc(data.text)}</p>
+          ${data.photoUrl ? `<div class="review-proof" style="margin-top: 12px; border-radius: 8px; overflow: hidden; border: 1px solid #23325f;"><img src="${esc(data.photoUrl)}" alt="Скриншот отзыва" loading="lazy" style="display: block; width: 100%; max-height: 220px; object-fit: cover;"></div>` : ''}
         </article>
       `;
     });
@@ -188,4 +188,8 @@ function esc(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-loadReviews();
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', loadReviews);
+} else {
+  loadReviews();
+}

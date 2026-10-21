@@ -18,7 +18,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/fonts/manrope-{{fontSubset}}-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/jetbrains-mono-{{fontSubset}}-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/styles.css?v=2">
+  <link rel="stylesheet" href="/assets/styles.css?v=3">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -206,44 +206,44 @@
     </section>
 
     <!-- Модальное окно отзыва -->
-    <dialog class="review-modal" id="review-modal" aria-labelledby="review-modal-title">
-      <div class="review-modal-box">
-        <button type="button" class="review-modal-close" aria-label="Закрыть">✕</button>
-        <h3 id="review-modal-title">{{reviews.formTitle}}</h3>
-        <p class="review-modal-lead">{{reviews.formLead}}</p>
+    <dialog class="review-modal" id="review-modal" aria-labelledby="review-modal-title" style="color: #ffffff;">
+      <div class="review-modal-box" style="background: #0e1738; color: #ffffff; border: 1px solid #2d3f75;">
+        <button type="button" class="review-modal-close" aria-label="Закрыть" style="background: #060b1d; color: #ffffff; border: 1px solid #3b4e85;">✕</button>
+        <h3 id="review-modal-title" style="color: #ffffff; font-weight: 700; font-size: 1.45rem; margin-bottom: 8px;">{{reviews.formTitle}}</h3>
+        <p class="review-modal-lead" style="color: #cbd5e1; font-size: 0.9rem; margin-bottom: 20px;">{{reviews.formLead}}</p>
 
         <form id="review-form" class="review-form">
           <!-- Honeypot спам-ловушка -->
           <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
           <div class="form-group">
-            <label for="review-name">{{reviews.nameLabel}}</label>
-            <input type="text" id="review-name" name="name" maxlength="60" required placeholder="{{reviews.namePlaceholder}}">
+            <label for="review-name" style="color: #e2e8f0; font-weight: 600;">{{reviews.nameLabel}}</label>
+            <input type="text" id="review-name" name="name" maxlength="60" required placeholder="{{reviews.namePlaceholder}}" style="background-color: #060b1d; color: #ffffff; -webkit-text-fill-color: #ffffff; border: 1px solid #3b4e85; padding: 12px 14px;">
           </div>
 
           <div class="form-group">
-            <label>{{reviews.ratingLabel}}</label>
-            <div class="rating-picker">
-              <label><input type="radio" name="rating" value="5" checked> ★ 5</label>
-              <label><input type="radio" name="rating" value="4"> ★ 4</label>
-              <label><input type="radio" name="rating" value="3"> ★ 3</label>
-              <label><input type="radio" name="rating" value="2"> ★ 2</label>
-              <label><input type="radio" name="rating" value="1"> ★ 1</label>
+            <label style="color: #e2e8f0; font-weight: 600;">{{reviews.ratingLabel}}</label>
+            <div class="rating-picker" style="background-color: #060b1d; border: 1px solid #3b4e85; padding: 10px 14px;">
+              <label style="color: #f5b544; font-weight: 600;"><input type="radio" name="rating" value="5" checked> ★ 5</label>
+              <label style="color: #f5b544; font-weight: 600;"><input type="radio" name="rating" value="4"> ★ 4</label>
+              <label style="color: #f5b544; font-weight: 600;"><input type="radio" name="rating" value="3"> ★ 3</label>
+              <label style="color: #f5b544; font-weight: 600;"><input type="radio" name="rating" value="2"> ★ 2</label>
+              <label style="color: #f5b544; font-weight: 600;"><input type="radio" name="rating" value="1"> ★ 1</label>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="review-text">{{reviews.textLabel}}</label>
-            <textarea id="review-text" name="text" rows="4" maxlength="1000" required placeholder="{{reviews.textPlaceholder}}"></textarea>
+            <label for="review-text" style="color: #e2e8f0; font-weight: 600;">{{reviews.textLabel}}</label>
+            <textarea id="review-text" name="text" rows="4" maxlength="1000" required placeholder="{{reviews.textPlaceholder}}" style="background-color: #060b1d; color: #ffffff; -webkit-text-fill-color: #ffffff; border: 1px solid #3b4e85; padding: 12px 14px;"></textarea>
           </div>
 
           <button type="submit" class="btn btn-primary">{{reviews.submitBtn}}</button>
         </form>
 
-        <div id="review-success" class="review-success" style="display: none;">
+        <div id="review-success" class="review-success" style="display: none; color: #ffffff;">
           <div class="success-icon">✓</div>
-          <h4>{{reviews.successTitle}}</h4>
-          <p>{{reviews.successText}}</p>
+          <h4 style="color: #ffffff;">{{reviews.successTitle}}</h4>
+          <p style="color: #cbd5e1;">{{reviews.successText}}</p>
         </div>
       </div>
     </dialog>
@@ -317,7 +317,7 @@
     </div>
   </dialog>
 
-  <script type="module" src="/assets/main.js?v=2"></script>
-{{#if features.reviews}}  <script type="module" src="/assets/reviews.js?v=2"></script>{{/if}}
+  <script type="module" src="/assets/main.js?v=3"></script>
+{{#if features.reviews}}  <script type="module" src="/assets/reviews.js?v=3"></script>{{/if}}
 </body>
 </html>
