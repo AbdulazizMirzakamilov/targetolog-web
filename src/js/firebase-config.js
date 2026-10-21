@@ -1,12 +1,12 @@
 // Конфигурация Firebase: данные из консоли Firebase
 // Подставьте ваши ключи из Firebase Console -> Project Settings -> General -> Your apps -> Web app
 export const firebaseConfig = {
-  apiKey: "REPLACE_ME_FIREBASE_API_KEY",
-  authDomain: "REPLACE_ME_PROJECT_ID.firebaseapp.com",
-  projectId: "REPLACE_ME_PROJECT_ID",
-  storageBucket: "REPLACE_ME_PROJECT_ID.appspot.com",
-  messagingSenderId: "REPLACE_ME_MESSAGING_SENDER_ID",
-  appId: "REPLACE_ME_APP_ID"
+  apiKey: "AIzaSyAiGVHb1x8e4KBRO1uH93VNX5FVH6HNlHs",
+  authDomain: "kamila-targetolog-6523a.firebaseapp.com",
+  projectId: "kamila-targetolog-6523a",
+  storageBucket: "kamila-targetolog-6523a.firebasestorage.app",
+  messagingSenderId: "827549919584",
+  appId: "1:827549919584:web:fb5c75d73bfb5eb63dd605"
 };
 
 // Проверка: настроен ли реальный проект Firebase
