@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Управление отзывами · Камила Meta Ads</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <style>
+    :root {
+      --admin-bg: #070c1e;
+      --admin-surface: #0e1738;
+      --admin-card: #14204b;
+      --admin-border: #1e2e65;
+    }
+    body {
+      background: var(--admin-bg);
+      color: var(--color-text);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .admin-wrap {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+    }
+    .admin-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 20px;
+      background: var(--admin-surface);
+      border: 1px solid var(--admin-border);
+      border-radius: var(--radius-md);
+      margin-bottom: 24px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .admin-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    .admin-user {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.875rem;
+    }
+    .admin-tabs {
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid var(--admin-border);
+      margin-bottom: 24px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+    .admin-tab {
+      background: transparent;
+      border: none;
+      color: var(--color-muted);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+      transition: all .15s;
+    }
+    .admin-tab:hover {
+      color: var(--color-text);
+      background: color-mix(in srgb, var(--admin-surface) 60%, transparent);
+    }
+    .admin-tab.is-active {
+      color: var(--color-text);
+      background: var(--admin-surface);
+      font-weight: 600;
+      border: 1px solid var(--admin-border);
+    }
+    .tab-badge {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--color-text);
+    }
+    .tab-badge--pending {
+      background: rgba(245, 181, 68, 0.2);
+      color: var(--color-accent);
+    }
+    .admin-panel {
+      display: none;
+    }
+    .admin-panel.is-active {
+      display: block;
+    }
+    .admin-grid {
+      display: grid;
+      gap: 16px;
+    }
+    .admin-review-card {
+      background: var(--admin-surface);
+      border: 1px solid var(--admin-border);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: border-color .15s;
+    }
+    .admin-review-card:hover {
+      border-color: var(--color-blue);
+    }
+    .admin-review-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .admin-review-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .admin-review-name {
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    .admin-review-date {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--color-muted);
+    }
+    .badge-lang {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding: 2px 6px;
+      background: var(--admin-card);
+      border: 1px solid var(--admin-border);
+      border-radius: 4px;
+      text-transform: uppercase;
+      color: var(--color-blue);
+    }
+    .badge-source {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(91, 124, 255, 0.1);
+      color: var(--color-blue);
+    }
+    .badge-status {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    .badge-status--pending {
+      background: rgba(245, 181, 68, 0.15);
+      color: var(--color-accent);
+    }
+    .badge-status--approved {
+      background: rgba(72, 187, 120, 0.15);
+      color: #48bb78;
+    }
+    .badge-status--rejected {
+      background: rgba(245, 101, 101, 0.15);
+      color: #f56565;
+    }
+    .admin-review-stars {
+      color: var(--color-accent);
+      font-size: 0.95rem;
+      letter-spacing: 2px;
+    }
+    .admin-review-body {
+      color: var(--color-text-dim);
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+    .admin-review-proof {
+      margin-top: 4px;
+    }
+    .admin-review-proof img {
+      max-height: 140px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--admin-border);
+      cursor: zoom-in;
+    }
+    .admin-review-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 8px;
+      padding-top: 14px;
+      border-top: 1px solid var(--admin-border);
+      flex-wrap: wrap;
+    }
+    .btn-sm {
+      padding: 6px 14px;
+      font-size: 0.8125rem;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-sans);
+      font-weight: 600;
+      border: 1px solid transparent;
+      transition: all .15s;
+    }
+    .btn-approve {
+      background: #198754;
+      color: #fff;
+    }
+    .btn-approve:hover {
+      background: #157347;
+    }
+    .btn-reject {
+      background: transparent;
+      color: #ff9800;
+      border-color: #ff9800;
+    }
+    .btn-reject:hover {
+      background: rgba(255, 152, 0, 0.1);
+    }
+    .btn-delete {
+      background: transparent;
+      color: #f56565;
+      border-color: rgba(245, 101, 101, 0.4);
+    }
+    .btn-delete:hover {
+      background: rgba(245, 101, 101, 0.15);
+      border-color: #f56565;
+    }
+    /* Login view */
+    .auth-box {
+      max-width: 420px;
+      margin: 80px auto;
+      background: var(--admin-surface);
+      border: 1px solid var(--admin-border);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    }
+    .auth-title {
+      font-size: 1.5rem;
+      margin: 0 0 8px;
+    }
+    .auth-lead {
+      color: var(--color-muted);
+      font-size: 0.875rem;
+      margin-bottom: 24px;
+      line-height: 1.5;
+    }
+    .auth-form {
+      display: grid;
+      gap: 16px;
+    }
+    .auth-form label {
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      color: var(--color-text-dim);
+    }
+    .auth-form input, .auth-form select, .auth-form textarea {
+      background: var(--admin-bg);
+      border: 1px solid var(--admin-border);
+      border-radius: var(--radius-sm);
+      color: var(--color-text);
+      padding: 10px 14px;
+      font-size: 0.9375rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .auth-form input:focus, .auth-form select:focus, .auth-form textarea:focus {
+      border-color: var(--color-accent);
+      outline: none;
+    }
+    .auth-error {
+      background: rgba(245, 101, 101, 0.15);
+      border: 1px solid #f56565;
+      color: #fca5a5;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      display: none;
+    }
+    .admin-notice {
+      background: rgba(91, 124, 255, 0.1);
+      border: 1px solid var(--color-blue);
+      color: var(--color-text);
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+      margin-bottom: 20px;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+    .admin-notice code {
+      font-family: var(--font-mono);
+      color: var(--color-accent);
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Блок авторизации -->
+  <div id="auth-section" class="admin-wrap" style="display: none;">
+    <div class="auth-box">
+      <h1 class="auth-title">Вход для администратора</h1>
+      <p class="auth-lead">Управление отзывами клиентов лендинга Meta Ads.</p>
+      
+      <div id="auth-unconfigured-warn" class="admin-notice" style="display: none;">
+        <strong>Внимание:</strong> Ключи Firebase ещё не указаны в <code>src/js/firebase-config.js</code>. Сначала подключите проект Firebase по инструкции.
+      </div>
+
+      <div id="auth-error" class="auth-error"></div>
+
+      <form id="auth-form" class="auth-form">
+        <div>
+          <label for="admin-email">Email администратора</label>
+          <input type="email" id="admin-email" required placeholder="admin@example.com" autocomplete="email">
+        </div>
+        <div>
+          <label for="admin-password">Пароль</label>
+          <input type="password" id="admin-password" required placeholder="••••••••" autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn btn-primary" id="btn-login" style="margin-top: 8px;">Войти в панель</button>
+      </form>
+      <div style="margin-top: 20px; text-align: center;">
+        <a href="/ru/" style="color: var(--color-muted); font-size: 0.8125rem; text-decoration: none;">← Вернуться на сайт</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Главная панель управления (после успешного входа) -->
+  <div id="admin-dashboard" class="admin-wrap" style="display: none;">
+    <header class="admin-header">
+      <div class="admin-brand">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        <span>Камила · Модерация отзывов</span>
+      </div>
+      <div class="admin-user">
+        <span id="user-display-email" style="font-family: var(--font-mono); color: var(--color-muted);"></span>
+        <button type="button" class="btn-sm btn-delete" id="btn-logout">Выйти</button>
+        <a href="/ru/" target="_blank" class="btn-sm" style="background: var(--admin-card); color: var(--color-text); text-decoration: none; border: 1px solid var(--admin-border);">На сайт ↗</a>
+      </div>
+    </header>
+
+    <!-- Вкладки -->
+    <nav class="admin-tabs" role="tablist">
+      <button class="admin-tab is-active" data-tab="pending" role="tab" aria-selected="true">
+        Новые на модерации <span class="tab-badge tab-badge--pending" id="badge-pending">0</span>
+      </button>
+      <button class="admin-tab" data-tab="approved" role="tab" aria-selected="false">
+        Опубликованные <span class="tab-badge" id="badge-approved">0</span>
+      </button>
+      <button class="admin-tab" data-tab="rejected" role="tab" aria-selected="false">
+        Отклонённые <span class="tab-badge" id="badge-rejected">0</span>
+      </button>
+      <button class="admin-tab" data-tab="create" role="tab" aria-selected="false">
+        + Добавить вручную
+      </button>
+    </nav>
+
+    <!-- Вкладка 1: Новые на модерации -->
+    <section class="admin-panel is-active" id="panel-pending">
+      <div class="admin-grid" id="list-pending">
+        <p class="muted">Загрузка отзывов...</p>
+      </div>
+    </section>
+
+    <!-- Вкладка 2: Опубликованные -->
+    <section class="admin-panel" id="panel-approved">
+      <div class="admin-grid" id="list-approved">
+        <p class="muted">Загрузка отзывов...</p>
+      </div>
+    </section>
+
+    <!-- Вкладка 3: Отклонённые -->
+    <section class="admin-panel" id="panel-rejected">
+      <div class="admin-grid" id="list-rejected">
+        <p class="muted">Загрузка отзывов...</p>
+      </div>
+    </section>
+
+    <!-- Вкладка 4: Добавить отзыв вручную (из Telegram / Instagram) -->
+    <section class="admin-panel" id="panel-create">
+      <div style="max-width: 620px; background: var(--admin-surface); border: 1px solid var(--admin-border); border-radius: var(--radius-md); padding: 24px;">
+        <h2 style="font-size: 1.25rem; margin-top: 0; margin-bottom: 6px;">Добавить отзыв клиента вручную</h2>
+        <p style="color: var(--color-muted); font-size: 0.875rem; margin-bottom: 20px;">
+          Используйте для публикации отзывов из личных сообщений в Telegram или Instagram со скриншотами.
+        </p>
+
+        <form id="form-manual-review" class="auth-form">
+          <div>
+            <label for="manual-name">Имя клиента / Название бизнеса *</label>
+            <input type="text" id="manual-name" required placeholder="Например: Алишер, сеть автосервисов" maxlength="80">
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div>
+              <label for="manual-rating">Оценка *</label>
+              <select id="manual-rating">
+                <option value="5" selected>★★★★★ 5 из 5</option>
+                <option value="4">★★★★☆ 4 из 5</option>
+                <option value="3">★★★☆☆ 3 из 5</option>
+              </select>
+            </div>
+            <div>
+              <label for="manual-lang">Язык отзыва *</label>
+              <select id="manual-lang">
+                <option value="ru" selected>Русский (ru)</option>
+                <option value="uz">O‘zbekcha (uz)</option>
+                <option value="en">English (en)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="manual-text">Текст отзыва / цитата *</label>
+            <textarea id="manual-text" rows="4" required placeholder="Вставьте текст или ключевую цитату клиента..." maxlength="1000"></textarea>
+          </div>
+
+          <div>
+            <label for="manual-photo">Ссылка на скриншот (необязательно)</label>
+            <input type="text" id="manual-photo" placeholder="Например: /img/cases/review_1.jpg или https://...">
+            <span style="font-size: 0.75rem; color: var(--color-muted); display: block; margin-top: 4px;">
+              Можно указать файл из папки <code>/img/cases/</code> или внешнюю ссылку на картинку.
+            </span>
+          </div>
+
+          <div>
+            <label for="manual-status">Статус публикации</label>
+            <select id="manual-status">
+              <option value="approved" selected>Опубликовать сразу на сайте</option>
+              <option value="pending">Сохранить как черновик (на модерацию)</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="btn-save-manual" style="margin-top: 10px;">
+            Сохранить отзыв
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <script type="module" src="/admin/admin.js"></script>
+</body>
+</html>

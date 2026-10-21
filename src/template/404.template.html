@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{notFound.title}} · 404</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0A1128">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="/{{lang}}/" aria-label="{{site.brandName}}">
+        <svg class="brand-mark" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M2 3h20L14 13v8l-4-2v-6L2 3z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><circle cx="12" cy="21.4" r="1.6" fill="var(--color-accent)"/></svg>
+        <span>{{site.brandName}}</span>
+      </a>
+      <div class="header-tools">
+        <a class="hero-cases-link" href="/{{lang}}/">
+          <span>{{notFound.back}}</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap nf-wrap">
+    <div class="nf-card">
+      <div class="nf-copy">
+        <p class="eyebrow">{{notFound.badge}}</p>
+        <h1>{{notFound.title}}</h1>
+        <p class="lead">{{notFound.text}}</p>
+        <div class="nf-log">{{notFound.log}}</div>
+        <div class="nf-actions">
+          <a class="btn btn-primary" href="/{{lang}}/">{{notFound.back}} <span class="btn-arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="{{site.contacts.telegram}}" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            <span>{{notFound.telegram}}</span>
+          </a>
+        </div>
+      </div>
+
+      <figure class="nf-visual" aria-hidden="true">
+        <svg class="nf-radar" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="sweep-grad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#5b7cff" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#5b7cff" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle class="nf-radar-circle" cx="150" cy="150" r="140"/>
+          <circle class="nf-radar-circle" cx="150" cy="150" r="100"/>
+          <circle class="nf-radar-circle" cx="150" cy="150" r="60"/>
+          <circle class="nf-radar-circle" cx="150" cy="150" r="20"/>
+          <line class="nf-radar-axis" x1="10" y1="150" x2="290" y2="150"/>
+          <line class="nf-radar-axis" x1="150" y1="10" x2="150" y2="290"/>
+          <g class="nf-radar-sweep">
+            <path d="M150 150 L150 10 A140 140 0 0 1 250 50 Z" fill="url(#sweep-grad)"/>
+            <line x1="150" y1="150" x2="250" y2="50" stroke="#5b7cff" stroke-width="1.75"/>
+          </g>
+          <g class="nf-radar-target">
+            <circle cx="215" cy="85" r="4.5" fill="#f5b544"/>
+            <circle cx="215" cy="85" r="12" fill="none" stroke="#f5b544" stroke-width="1.5" stroke-dasharray="2 3"/>
+            <text x="232" y="90" fill="#f5b544" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1">404_LOST</text>
+          </g>
+          <circle cx="150" cy="150" r="3" fill="#5b7cff"/>
+          <text x="155" y="24" fill="#a3aecb" font-family="JetBrains Mono, monospace" font-size="9" opacity="0.6">RADAR // 360°</text>
+        </svg>
+      </figure>
+    </div>
+  </main>
+</body>
+</html>

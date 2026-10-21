@@ -1,0 +1,212 @@
+[
+  {
+    "id": "case-atelye",
+    "placeholder": false,
+    "niche": {
+      "ru": "Ателье и пошив женской одежды",
+      "uz": "Ayollar liboslari atelyesi va tikuvchilik",
+      "en": "Custom Women's Clothing & Atelier"
+    },
+    "statVal": "1 700+",
+    "statLbl": {
+      "ru": "начатых диалогов",
+      "uz": "boshlangan muloqot",
+      "en": "conversations started"
+    },
+    "costVal": "$0.15",
+    "costLbl": {
+      "ru": "цена за диалог",
+      "uz": "muloqot narxi",
+      "en": "per conversation"
+    },
+    "task": {
+      "ru": "Привлечь поток заказов на пошив и продажу готовых коллекций через Instagram Direct",
+      "uz": "Instagram Direct orqali tayyor modellarni sotish va individual tikuv buyurtmalarini jalb qilish",
+      "en": "Drive direct customer inquiries and sales for custom tailoring and ready collections"
+    },
+    "solution": {
+      "ru": "Кампании на переписки с подборками готовых образов, деталями ткани и таргетингом по стилю",
+      "uz": "Murojaatlar va savdoga mo‘ljallangan kampaniyalar, kolleksiya videolari va uslubiy qiziqishlar bo‘yicha target",
+      "en": "Lookbook carousel and video ads targeting fashion-conscious audiences with Direct chat triggers"
+    },
+    "budget": {
+      "ru": "$248.10 (в среднем $12 / день)",
+      "uz": "$248.10 (o‘rtacha $12 / kun)",
+      "en": "$248.10 (~$12 / day)"
+    },
+    "result": {
+      "ru": "1 700+ начатых переписок по цене $0.15 за диалог",
+      "uz": "1 700+ ta boshlangan yozishmalar, har biri $0.15 dan",
+      "en": "1,700+ conversations started at $0.15 per message"
+    },
+    "screenshot": "/img/cases/atelye.png"
+  },
+  {
+    "id": "case-ecostudio",
+    "placeholder": false,
+    "niche": {
+      "ru": "Оцифровка архивов и VHS (EcoStudio)",
+      "uz": "VHS kassetalarni raqamlashtirish (EcoStudio)",
+      "en": "Media Digitization Studio (EcoStudio)"
+    },
+    "statVal": "285 лидов",
+    "statLbl": {
+      "ru": "+2 120 новых подписчиков",
+      "uz": "+2 120 yangi obunachi",
+      "en": "+2,120 new followers"
+    },
+    "costVal": "$0.36",
+    "costLbl": {
+      "ru": "цена за лид-форму",
+      "uz": "har bir lid narxi",
+      "en": "cost per lead form"
+    },
+    "task": {
+      "ru": "Собрать заявки на оцифровку семейных видеоархивов и развить профиль студии",
+      "uz": "Oilaviy arxivlar va to‘y videolarini raqamlashtirishga arizalar to‘plash hamda sahifani o‘stirish",
+      "en": "Generate inbound leads for family tape digitization and organically grow the Instagram profile"
+    },
+    "solution": {
+      "ru": "Моментальные лид-формы Meta (Instant Forms) с ностальгическим посылом и роликами процесса восстановления",
+      "uz": "Meta Instant Forms orqali oilaviy xotiralarni saqlash taklifi va kassetalarni tiklash jarayoni aks etgan kreativlar",
+      "en": "Meta Instant Lead Forms emphasizing sentimental family archives combined with restoration process video ads"
+    },
+    "budget": {
+      "ru": "$102.47 на лид-формы",
+      "uz": "Lid-formalar uchun $102.47",
+      "en": "$102.47 on lead forms"
+    },
+    "result": {
+      "ru": "285 лид-форм по $0.36 + рост профиля с 7 000 до 9 200+ подписчиков",
+      "uz": "Har biri $0.36 dan 285 ta lid-forma + sahifa obunachilarining 7 000 dan 9 200+ gacha o‘sishi",
+      "en": "285 submitted lead forms at $0.36 per lead + account growth from 7,000 to 9,200+ followers"
+    },
+    "screenshot": "/img/cases/ecostudio.png"
+  },
+  {
+    "id": "case-hidjama",
+    "placeholder": false,
+    "niche": {
+      "ru": "Оздоровительный центр (Хиджама)",
+      "uz": "Salomatlik markazi (Hijoma)",
+      "en": "Wellness Center (Hijama)"
+    },
+    "statVal": "619",
+    "statLbl": {
+      "ru": "обращений на запись",
+      "uz": "yozilish uchun murojaat",
+      "en": "appointment inquiries"
+    },
+    "costVal": "$0.24",
+    "costLbl": {
+      "ru": "цена за обращение",
+      "uz": "murojaat narxi",
+      "en": "cost per inquiry"
+    },
+    "task": {
+      "ru": "Привлечь поток пациентов на оздоровительные процедуры через запись в Direct",
+      "uz": "Muolajaga yozilish uchun shaxsiy xabarlar orqali mijozlarni jalb qilish",
+      "en": "Acquire bookings and inquiries for wellness appointments via direct messaging"
+    },
+    "solution": {
+      "ru": "Реклама на переписки с акцентом на стерильность, квалификацию специалистов и локальный геотаргетинг",
+      "uz": "Sterillik, mutaxassislar malakasi va aniq shahar lokatsiyasi bo‘yicha maqsadli xabarlar kampaniyasi",
+      "en": "Messaging campaigns highlighting certified practitioners, sterile procedures, and local radius targeting"
+    },
+    "budget": {
+      "ru": "$149.88 за весь период",
+      "uz": "Butun davr uchun $149.88",
+      "en": "$149.88 total ad spend"
+    },
+    "result": {
+      "ru": "619 начатых диалогов по цене $0.24 за обращение. Оценка качества Meta — 100/100",
+      "uz": "Har biri $0.24 dan 619 ta boshlangan murojaat. Meta sifat bahosi — 100/100",
+      "en": "619 conversations started at $0.24 per inquiry. Meta ad quality score: 100/100"
+    },
+    "screenshot": "/img/cases/hidjama.png"
+  },
+  {
+    "id": "case-hiring",
+    "placeholder": false,
+    "niche": {
+      "ru": "HR-таргетинг: найм швей на фабрику",
+      "uz": "HR-target: tikuvchilarni fabrikaga yollash",
+      "en": "HR Recruitment: Factory Seamstress Hiring"
+    },
+    "statVal": "661",
+    "statLbl": {
+      "ru": "откликов соискателей",
+      "uz": "nomzodlar arizasi",
+      "en": "candidate applications"
+    },
+    "costVal": "$0.05",
+    "costLbl": {
+      "ru": "цена за кандидата",
+      "uz": "har bir nomzod narxi",
+      "en": "cost per applicant"
+    },
+    "task": {
+      "ru": "Срочно набрать квалифицированных швей для выполнения сезонных заказов производства",
+      "uz": "Mavsumiy buyurtmalar uchun malakali tikuvchilarni tezkorlik bilan topish",
+      "en": "Rapidly fill manufacturing vacancies for sewing specialists under tight production deadlines"
+    },
+    "solution": {
+      "ru": "Прямые офферы с условиями оплаты, таргетинг по районам и интересам к текстилю с бюджетом $3/день",
+      "uz": "Aniq maosh shartlari ko‘rsatilgan to‘g‘ridan-to‘g‘ri kreativlar, kuniga $3 byudjet bilan hududiy target",
+      "en": "Direct-response vacancy ads with clear compensation packages and tight local radius targeting at $3/day"
+    },
+    "budget": {
+      "ru": "$34.06 (всего $3.00 в день)",
+      "uz": "$34.06 (kuniga bor-yo‘g‘i $3.00)",
+      "en": "$34.06 ($3.00 / day budget)"
+    },
+    "result": {
+      "ru": "661 отклик от соискателей по рекордной цене $0.05 за кандидата",
+      "uz": "Har biri rekord darajadagi $0.05 dan 661 ta murojaat",
+      "en": "661 candidate applications at an exceptional $0.05 per conversation"
+    },
+    "screenshot": "/img/cases/hiring.png"
+  },
+  {
+    "id": "case-minaret",
+    "placeholder": false,
+    "niche": {
+      "ru": "Архитектурное бюро и дизайн интерьера",
+      "uz": "Arxitektura byurosi va interyer dizayni",
+      "en": "Architecture Studio & Turnkey Interior Design"
+    },
+    "statVal": "+5 420",
+    "statLbl": {
+      "ru": "целевых подписчиков (рост до 7 370)",
+      "uz": "maqsadli obunachi (7 370 gacha o‘sish)",
+      "en": "target followers (growth to 7,370)"
+    },
+    "costVal": "100%",
+    "costLbl": {
+      "ru": "целевые заявки на проекты",
+      "uz": "loyiha uchun sifatli arizalar",
+      "en": "high-ticket client inquiries"
+    },
+    "task": {
+      "ru": "Привлечь премиальных заказчиков на проектирование частных домов и коммерческих объектов",
+      "uz": "Xususiy uylar va biznes ob’yektlarini loyihalashga buyurtmachilar jalb qilish",
+      "en": "Attract high-value clients for residential and commercial architectural projects"
+    },
+    "solution": {
+      "ru": "Лид-магнит «Бесплатный аудит ошибок в планировке» + экспертные разборы 3D-туров в рекламе",
+      "uz": "«Rejangizdagi xatolarni bepul tekshiring» taklifi hamda 3D-ekskursiya va loyihalar tahlili",
+      "en": "Lead magnet offering free architectural plan audits combined with 3D-walkthroughs and blueprint review ads"
+    },
+    "budget": {
+      "ru": "Системное ведение кампаний",
+      "uz": "Kampaniyalarni tizimli olib borish",
+      "en": "Systematic ad management"
+    },
+    "result": {
+      "ru": "Рост блога с 1 900 до 7 370+ подписчиков (+5 400) и системные заявки на проекты",
+      "uz": "Sahifa obunachilarining 1 900 dan 7 370+ gacha o‘sishi (+5 400) va doimiy buyurtmalar",
+      "en": "Profile audience surged from 1,900 to 7,370+ (+5,400) with steady architectural project deals"
+    },
+    "screenshot": "/img/cases/minaret.png"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "_comment": "Единое место для адреса сайта, контактов и включения функций. Значения REPLACE_ME build.js покажет предупреждением.",
+  "siteUrl": "https://REPLACE_ME.pages.dev",
+  "defaultLang": "ru",
+  "langs": ["ru", "uz", "en"],
+  "brandName": "Камила",
+  "contacts": {
+    "telegram": "https://t.me/kam1la4",
+    "telegramHandle": "@kam1la4",
+    "instagram": "https://www.instagram.com/targetolog_kami1a?cplk=bHZhbDNvYnMydTVu",
+    "instagramHandle": "@targetolog_kami1a"
+  },
+  "features": {
+    "reviews": true
+  }
+}

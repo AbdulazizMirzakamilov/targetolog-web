@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
+  <meta name="theme-color" content="#0A1128">
+  <link rel="canonical" href="{{url.self}}">
+{{#each alternates}}  <link rel="alternate" hreflang="{{this.code}}" href="{{this.url}}">
+{{/each}}  <link rel="alternate" hreflang="x-default" href="{{url.xDefault}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{meta.title}}">
+  <meta property="og:description" content="{{meta.description}}">
+  <meta property="og:url" content="{{url.self}}">
+  <meta property="og:locale" content="{{ogLocale}}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/manrope-{{fontSubset}}-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/jetbrains-mono-{{fontSubset}}-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip" href="#main">{{a11y.skip}}</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="/{{lang}}/" aria-label="{{site.brandName}}">
+        <svg class="brand-mark" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M2 3h20L14 13v8l-4-2v-6L2 3z" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/><circle cx="12" cy="21.4" r="1.6" fill="var(--color-accent)"/></svg>
+        <span>{{site.brandName}}</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="{{a11y.mainNav}}">
+        <a href="#what">{{nav.what}}</a>
+        <a href="#cases">{{nav.cases}}</a>
+        <a href="#about">{{nav.about}}</a>
+{{#if features.reviews}}        <a href="#reviews">{{nav.reviews}}</a>
+{{/if}}        <a href="#contacts">{{nav.contacts}}</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang" role="group" aria-label="{{a11y.langSwitch}}">
+{{#each langs}}          <a href="{{this.href}}" hreflang="{{this.code}}" lang="{{this.code}}" data-track="lang_switch" {{this.current}}>{{this.name}}</a>
+{{/each}}        </div>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="{{a11y.menu}}">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Первый экран -->
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="hero-status">
+          <span class="status-pulse"><span class="status-dot"></span></span>
+          <span>{{hero.status}}</span>
+        </div>
+        <h1 id="hero-title">{{hero.title}}</h1>
+        <p class="lead">{{hero.lead}}</p>
+        <ul class="hero-badges" aria-label="Преимущества">
+{{#each hero.badges}}          <li>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3.5 8.5 6.5 11.5 12.5 4.5"/></svg>
+            <span>{{this.text}}</span>
+          </li>
+{{/each}}        </ul>
+        <div class="hero-cta-group">
+          <div class="hero-primary-action">
+            <a class="btn btn-primary btn-hero" href="{{site.contacts.telegram}}" target="_blank" rel="noopener" data-track="telegram_click">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+              <span>{{cta.discuss}}</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <span class="hero-note">{{cta.discussNote}}</span>
+          </div>
+          <a class="hero-cases-link" href="#cases" data-track="cases_scroll">
+            <span>{{cta.cases}}</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+          </a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+{{> funnel}}
+        <figcaption>{{hero.caption}}</figcaption>
+      </figure>
+    </section>
+
+    <!-- Что такое таргет -->
+    <section class="section wrap" id="what" aria-labelledby="what-title">
+      <div class="section-head" data-reveal>
+        <h2 id="what-title">{{what.title}}</h2>
+        <p class="lead">{{what.lead}}</p>
+      </div>
+
+      <ol class="steps" data-reveal>
+{{#each what.steps}}        <li class="step">
+          <span class="step-num">{{@n}}</span>
+          <h3>{{this.title}}</h3>
+          <p>{{this.text}}</p>
+        </li>
+{{/each}}      </ol>
+
+      <p class="note" data-reveal>{{what.note}}</p>
+    </section>
+
+    <!-- Кейсы -->
+    <section class="section wrap" id="cases" aria-labelledby="cases-title">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">{{cases.eyebrow}}</p>
+        <h2 id="cases-title">{{cases.title}}</h2>
+        <p class="lead">{{cases.lead}}</p>
+      </div>
+
+      <div class="cases">
+{{#each casesList}}        <article class="case-card" data-reveal>
+          <div class="case-card-info">
+            <div class="case-card-top">
+              <span class="case-niche-badge">{{this.niche}}</span>
+              <span class="case-budget-badge">{{this.budget}}</span>
+            </div>
+
+            <div class="case-stats-row">
+              <div class="case-stat">
+                <span class="case-stat-num">{{this.statVal}}</span>
+                <span class="case-stat-lbl">{{this.statLbl}}</span>
+              </div>
+              <div class="case-stat case-stat--accent">
+                <span class="case-stat-num">{{this.costVal}}</span>
+                <span class="case-stat-lbl">{{this.costLbl}}</span>
+              </div>
+            </div>
+
+            <dl class="case-points">
+              <div>
+                <dt>{{cases.labels.task}}</dt>
+                <dd>{{this.task}}</dd>
+              </div>
+              <div>
+                <dt>{{cases.labels.solution}}</dt>
+                <dd>{{this.solution}}</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="case-card-visual">
+            <div class="case-mock-header">
+              <span class="case-mock-dot"></span>
+              <span class="case-mock-title">Meta Ads Manager · Proof</span>
+              <span class="case-mock-hint">{{cases.zoomHint}} ↗</span>
+            </div>
+            <div class="case-shot-wrap">
+              <img src="{{this.screenshot}}" alt="{{this.niche}} — {{cases.screenshotAlt}}" loading="lazy" width="800" height="500">
+              <div class="case-zoom-overlay">
+                <span class="case-zoom-badge">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  <span>{{cases.zoomBtn}}</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </article>
+{{/each}}      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="section wrap about" id="about" aria-labelledby="about-title">
+      <div class="about-photo-wrapper" data-reveal>
+        <div class="about-photo-frame">
+          <img src="/img/kamila.jpg" alt="{{about.photoAlt}}" width="360" height="450" loading="lazy">
+          <div class="about-photo-badge">
+            <span class="status-pulse"><span class="status-dot"></span></span>
+            <span>Meta Ads Specialist</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-copy" data-reveal>
+        <p class="eyebrow">{{about.eyebrow}}</p>
+        <h2 id="about-title">{{about.title}}</h2>
+        <p class="lead">{{about.text}}</p>
+        <dl class="facts">
+{{#each about.facts}}          <div><dt>{{this.label}}</dt><dd>{{this.value}}</dd></div>
+{{/each}}        </dl>
+      </div>
+    </section>
+
+{{#if features.reviews}}    <!-- Отзывы -->
+    <section class="section wrap" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-head section-head--row" data-reveal>
+        <div>
+          <p class="eyebrow">{{reviews.eyebrow}}</p>
+          <h2 id="reviews-title">{{reviews.title}}</h2>
+          <p class="lead">{{reviews.lead}}</p>
+        </div>
+        <button type="button" class="btn btn-ghost" id="open-review-modal" data-track="leave_review_click">
+          <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          <span>{{reviews.leaveBtn}}</span>
+        </button>
+      </div>
+
+      <div class="reviews-grid" id="reviews-list" data-reviews-lang="{{lang}}">
+        <p class="muted">{{reviews.loading}}</p>
+      </div>
+    </section>
+
+    <!-- Модальное окно отзыва -->
+    <dialog class="review-modal" id="review-modal" aria-labelledby="review-modal-title">
+      <div class="review-modal-box">
+        <button type="button" class="review-modal-close" aria-label="Закрыть">✕</button>
+        <h3 id="review-modal-title">{{reviews.formTitle}}</h3>
+        <p class="review-modal-lead">{{reviews.formLead}}</p>
+
+        <form id="review-form" class="review-form">
+          <!-- Honeypot спам-ловушка -->
+          <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="form-group">
+            <label for="review-name">{{reviews.nameLabel}}</label>
+            <input type="text" id="review-name" name="name" maxlength="60" required placeholder="{{reviews.namePlaceholder}}">
+          </div>
+
+          <div class="form-group">
+            <label>{{reviews.ratingLabel}}</label>
+            <div class="rating-picker">
+              <label><input type="radio" name="rating" value="5" checked> ★ 5</label>
+              <label><input type="radio" name="rating" value="4"> ★ 4</label>
+              <label><input type="radio" name="rating" value="3"> ★ 3</label>
+              <label><input type="radio" name="rating" value="2"> ★ 2</label>
+              <label><input type="radio" name="rating" value="1"> ★ 1</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="review-text">{{reviews.textLabel}}</label>
+            <textarea id="review-text" name="text" rows="4" maxlength="1000" required placeholder="{{reviews.textPlaceholder}}"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">{{reviews.submitBtn}}</button>
+        </form>
+
+        <div id="review-success" class="review-success" style="display: none;">
+          <div class="success-icon">✓</div>
+          <h4>{{reviews.successTitle}}</h4>
+          <p>{{reviews.successText}}</p>
+        </div>
+      </div>
+    </dialog>
+{{/if}}
+    <!-- Контакты -->
+    <section class="section wrap" id="contacts" aria-labelledby="contacts-title">
+      <div class="contact-hub" data-reveal>
+        <div class="contact-main">
+          <p class="eyebrow">{{contacts.eyebrow}}</p>
+          <h2 id="contacts-title">{{contacts.title}}</h2>
+          <p class="lead">{{contacts.text}}</p>
+          <div class="contact-cta-wrapper">
+            <a class="btn btn-primary btn-hero" href="{{site.contacts.telegram}}" target="_blank" rel="noopener" data-track="telegram_click">
+              <svg class="btn-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+              <span>{{contacts.action}}</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <span class="contact-sub">{{cta.discussNote}}</span>
+          </div>
+        </div>
+
+        <div class="contact-cards">
+          <div class="contact-cards-title">{{contacts.channelsTitle}}</div>
+
+          <a class="contact-card" href="{{site.contacts.telegram}}" target="_blank" rel="noopener" data-track="telegram_card_click">
+            <div class="contact-card-icon contact-card-icon--tg">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <div class="contact-card-header">
+                <span class="contact-card-name">{{contacts.telegram.name}}</span>
+                <span class="contact-card-handle">{{site.contacts.telegramHandle}}</span>
+              </div>
+              <p class="contact-card-desc">{{contacts.telegram.desc}}</p>
+              <span class="contact-card-link">{{contacts.telegram.action}} ↗</span>
+            </div>
+          </a>
+
+          <a class="contact-card" href="{{site.contacts.instagram}}" target="_blank" rel="noopener" data-track="instagram_card_click">
+            <div class="contact-card-icon contact-card-icon--ig">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <div class="contact-card-body">
+              <div class="contact-card-header">
+                <span class="contact-card-name">{{contacts.instagram.name}}</span>
+                <span class="contact-card-handle">{{site.contacts.instagramHandle}}</span>
+              </div>
+              <p class="contact-card-desc">{{contacts.instagram.desc}}</p>
+              <span class="contact-card-link">{{contacts.instagram.action}} ↗</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>© {{year}} {{site.brandName}}. {{footer.rights}}</span>
+      <span class="footer-lang">
+{{#each langs}}        <a href="{{this.href}}" hreflang="{{this.code}}" lang="{{this.code}}">{{this.name}}</a>
+{{/each}}      </span>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Просмотр скриншота">
+    <div class="lightbox-box">
+      <button type="button" class="lightbox-close" aria-label="Закрыть">✕</button>
+      <img src="" alt="" loading="lazy">
+    </div>
+  </dialog>
+
+  <script type="module" src="/assets/main.js"></script>
+{{#if features.reviews}}  <script type="module" src="/assets/reviews.js"></script>{{/if}}
+</body>
+</html>

@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Авторизованный пользователь (аккаунт администратора, созданный в Firebase Auth Console)
+    function isAdmin() {
+      return request.auth != null;
+    }
+    match /reviews/{id} {
+      // Публично доступны только одобренные отзывы; админу доступны все
+      allow read: if resource.data.status == 'approved' || isAdmin();
+      // Админ может создавать любые отзывы; гости — только заявки со строгой валидацией
+      allow create: if isAdmin() || (
+        request.resource.data.keys().hasOnly(['name','text','rating','lang','status','source','createdAt'])
+        && request.resource.data.status == 'pending'
+        && request.resource.data.source == 'public'
+        && request.resource.data.name is string && request.resource.data.name.size() <= 60
+        && request.resource.data.text is string && request.resource.data.text.size() <= 1000
+        && request.resource.data.rating is int
+        && request.resource.data.rating >= 1 && request.resource.data.rating <= 5
+        && request.resource.data.createdAt == request.time
+      );
+      // Модерация и удаление разрешены только администратору
+      allow update, delete: if isAdmin();
+    }
+  }
+}

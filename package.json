@@ -1,0 +1,17 @@
+{
+  "name": "targetolog-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Персональный сайт таргетолога (Meta Ads): HTML + Tailwind CSS + JS, языки ru/uz",
+  "scripts": {
+    "build:css": "tailwindcss -i src/css/input.css -o dist/assets/styles.css --minify",
+    "build:html": "node scripts/build.js",
+    "build": "node scripts/build.js && npm run build:css",
+    "dev": "node scripts/dev.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

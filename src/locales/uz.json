@@ -1,0 +1,107 @@
+{
+  "lang": "uz",
+  "langName": "UZ",
+  "ogLocale": "uz_UZ",
+  "meta": {
+    "title": "Meta Ads targetologi: kichik biznes uchun Instagram va Facebook reklamasi",
+    "description": "Instagram va Facebook’da reklamani sozlash va yuritish: strategiya, gipotezalarni sinash, tahlil. Keyslar va yondashuv. Loyihani Telegram’da muhokama qilish mumkin."
+  },
+  "a11y": { "skip": "Mazmunga o‘tish", "menu": "Menyu", "langSwitch": "Sayt tili", "mainNav": "Asosiy navigatsiya", "illustration": "Voronka sxemasi: ko‘rsatuvlar, kliklar, murojaatlar. Illyustratsiya, haqiqiy ma’lumot emas." },
+  "nav": { "what": "Target nima", "cases": "Keyslar", "about": "Men haqimda", "reviews": "Fikrlar", "contacts": "Aloqa" },
+  "cta": {
+    "discuss": "Telegram’da yozish",
+    "discussNote": "Shaxsan 1–2 soat ichida javob beraman",
+    "cases": "Keyslar va raqamlarni ko‘rish"
+  },
+  "hero": {
+    "status": "Yangi loyihalar qabul qilinmoqda · Meta Ads",
+    "title": "Instagram & Facebook’da natijaga ishlaydigan maqsadli reklama",
+    "lead": "Biznesingizga barqaror murojaatlar oqimini jalb qilishga yordam beraman. Balandparvoz va’dalarsiz, aniq raqamlar bilan ishlayman: auditoriyani sinayman, bosqichma-bosqich test qilaman va har bir lid narxini optimallashtiraman.",
+    "badges": [
+      { "text": "Shaffof hisobotlar" },
+      { "text": "Pixel & CAPI sozlash" },
+      { "text": "Byudjetni tejash" }
+    ],
+    "funnel": { "views": "Ko‘rsatuvlar", "clicks": "Kliklar", "leads": "Murojaatlar" },
+    "caption": "Voronka sxemasi: ko‘rsatuvdan maqsadli murojaatgacha"
+  },
+  "what": {
+    "title": "Target nima",
+    "lead": "Targetlangan reklama mijozingizga o‘xshash odamlarga ko‘rsatiladi: qiziqishlari, xatti-harakati, shahri va boshqa belgilari bo‘yicha. Men Meta bilan ishlayman: Instagram va Facebook.",
+    "stepsLabel": "Qadam",
+    "steps": [
+      { "title": "Strategiya va auditoriya tahlili", "text": "Kimga, nimani va nima uchun reklama qilishni aniqlaymiz." },
+      { "title": "Sozlash va ishga tushirish", "text": "Kreativlar, auditoriyalar, gipotezalar, byudjet." },
+      { "title": "O‘tishlar va murojaatlar", "text": "Potensial mijozlar taklifingizdan xabardor bo‘lib, sizga yozadi." },
+      { "title": "Tahlil va optimallashtirish", "text": "Ko‘rsatkichlarni baholaymiz, sinaymiz, yaxshilaymiz." },
+      { "title": "Biznes o‘sishi", "text": "Maqsadli murojaatlar va savdo imkoniyatlari ko‘payadi." }
+    ],
+    "note": "Reklama potensial mijozlarni jalb qilishga yordam beradi, ammo savdoga boshqa omillar ham ta’sir qiladi: taklif, narx, sayt yoki profil, murojaatlarni qayta ishlash va sotuv bo‘limining ishi."
+  },
+  "cases": {
+    "eyebrow": "Raqamlardagi natijalar",
+    "title": "Keyslar va tasdiqlangan ko‘rsatkichlar",
+    "lead": "Ads Manager hisobotlari bilan tasdiqlangan haqiqiy loyihalar: sohalar, vazifalar, xarajatlar va olingan arizalar.",
+    "labels": { "niche": "Soha", "task": "Vazifa", "solution": "Yechim", "budget": "Byudjet", "result": "Natija" },
+    "zoomHint": "Kattalashtirish uchun bosing",
+    "zoomBtn": "Skrinshotni kattalashtirish",
+    "screenshotAlt": "Meta Ads kabinetidan skrinshot",
+    "screenshot": "Reklama kabinetidan skrinshot"
+  },
+  "about": {
+    "eyebrow": "Mutaxassis haqida",
+    "title": "Tanishaylik: Kamila",
+    "text": "Instagram va Facebook (Meta Ads)da maqsadli reklama mutaxassisiman. Biznesingizga barqaror va tushunarli murojaatlar oqimini jalb qilishga yordam beraman. Asosiy qoidam — raqamlar va tahlilga tayanish: har bir e’lon va auditoriya kabinetdagi aniq ko‘rsatkichlar asosida sinovdan o‘tkaziladi.",
+    "facts": [
+      { "label": "Mutaxassislik", "value": "Meta Ads: Instagram va Facebook" },
+      { "label": "Sohalardagi tajriba", "value": "Atelye va kiyim brendlari, xizmat ko‘rsatish, salomatlik, HR-yollash, raqamlashtirish" },
+      { "label": "Yondashuv", "value": "Auditoriyani chuqur o‘rganish, testlar, lid narxini optimallashtirish" },
+      { "label": "Ish formati", "value": "Kabinetda shaffof hisobotlar, Telegram orqali to‘g‘ridan-to‘g‘ri aloqa" }
+    ],
+    "photoAlt": "Kamila — Meta Ads targetologi"
+  },
+  "reviews": {
+    "eyebrow": "Mijozlar ishonchi",
+    "title": "Mijozlar fikrlari",
+    "lead": "Hamkorlik va reklama natijalari haqida tadbirkorlarning haqiqiy taassurotlari.",
+    "leaveBtn": "Fikr qoldirish",
+    "loading": "Fikrlar yuklanmoqda...",
+    "empty": "Hozircha fikrlar yo‘q. Birinchi bo‘lib o‘z fikringizni qoldiring!",
+    "formTitle": "Fikr qoldirish",
+    "formLead": "Hamkorligimiz haqida fikringizni yozing. U tekshiruvdan so‘ng saytda e’lon qilinadi.",
+    "nameLabel": "Ismingiz va kompaniyangiz / sohangiz",
+    "namePlaceholder": "Masalan: Aziza, dekoratsiya studiyasi",
+    "ratingLabel": "Baholash",
+    "textLabel": "Fikr matni",
+    "textPlaceholder": "Nimalar ma’qul keldi, qanday natijalarga erishildi...",
+    "submitBtn": "Fikrni yuborish",
+    "successTitle": "Fikringiz uchun rahmat!",
+    "successText": "U muvaffaqiyatli yuborildi va tekshirilgach saytda paydo bo‘ladi."
+  },
+  "contacts": {
+    "eyebrow": "Aloqa",
+    "title": "Vazifangizni muhokama qilamiz",
+    "text": "Telegram’da yozing — biznesingiz, taklifingiz va maqsadlaringiz haqida qisqacha aytib bering. Qaysi auditoriya va byudjet bilan boshlash samaraliroq ekanini aytaman.",
+    "action": "Telegram’da yozish",
+    "channelsTitle": "To‘g‘ridan-to‘g‘ri aloqa",
+    "telegram": {
+      "name": "Telegram",
+      "desc": "Tezkor javoblar, loyiha muhokamasi va qo‘ng‘iroqlar",
+      "action": "Chatni ochish"
+    },
+    "instagram": {
+      "name": "Instagram",
+      "desc": "Ish jarayoni, qisqa tahlillar va direct",
+      "action": "Profilga o‘tish"
+    }
+  },
+  "footer": { "rights": "Barcha huquqlar himoyalangan" },
+  "notFound": {
+    "badge": "HTTP 404 · AUDIENCE NOT FOUND",
+    "title": "Aftidan, bu o‘tish voronkadan chetga chiqdi",
+    "text": "Meta’ning aqlli algoritmlarida ham ba’zan yo‘naltirish xatoliklari bo‘ladi. Siz qidirayotgan sahifa arxivga ko‘chirilgan, o‘chirilgan yoki voronka bosqichida yo‘qolgan.",
+    "back": "Bosh sahifaga qaytish",
+    "telegram": "Telegram orqali bog‘lanish",
+    "log": "LOG // STATUS: 404_TARGET_LOST // AUDIENCE_SIZE: 0 // CTR: 0.00% // CPM: $0.00 // BUDGET_SAVED: 100%"
+  }
+}

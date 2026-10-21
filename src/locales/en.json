@@ -1,0 +1,125 @@
+{
+  "lang": "en",
+  "langName": "EN",
+  "ogLocale": "en_US",
+  "meta": {
+    "title": "Meta Ads Specialist: Targeted Instagram & Facebook Advertising for Business",
+    "description": "Strategic Meta Ads setup and management for small and growing businesses: hypothesis testing, funnel optimization, and data-driven performance. Explore case studies."
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "langSwitch": "Site language",
+    "mainNav": "Main navigation",
+    "illustration": "Funnel schema: impressions, clicks, inquiries. Illustrative diagram."
+  },
+  "nav": {
+    "what": "How It Works",
+    "cases": "Cases",
+    "about": "About",
+    "reviews": "Reviews",
+    "contacts": "Contact"
+  },
+  "cta": {
+    "discuss": "Message on Telegram",
+    "discussNote": "Personal reply, typically within 1–2 hours",
+    "cases": "Explore Cases & Metrics"
+  },
+  "hero": {
+    "status": "Accepting new projects · Meta Ads",
+    "title": "Targeted Instagram & Facebook Ads Focused on Real ROI",
+    "lead": "Helping businesses build a predictable flow of customer inquiries. No vanity metrics or wasted ad spend: I test creative angles, cut cost-per-lead, and optimize campaigns for real revenue.",
+    "badges": [
+      { "text": "Transparent reporting" },
+      { "text": "Pixel & CAPI integration" },
+      { "text": "ROI-driven approach" }
+    ],
+    "funnel": { "views": "Impressions", "clicks": "Clicks", "leads": "Inquiries" },
+    "caption": "Funnel schema: from ad impression to qualified lead"
+  },
+  "what": {
+    "title": "What Is Targeted Advertising?",
+    "lead": "Targeted advertising reaches audiences matching your ideal customer profile: by specific interests, behavior patterns, city, and demographics across Instagram and Facebook.",
+    "stepsLabel": "Step",
+    "steps": [
+      { "title": "Strategy & Audience Research", "text": "Defining who we target, what core offer converts, and why." },
+      { "title": "Setup & Launch", "text": "Ad creatives, custom audiences, hypothesis testing, and budget allocation." },
+      { "title": "Traffic & Inquiries", "text": "Interested potential buyers discover your offer and initiate direct contact." },
+      { "title": "Analytics & Optimization", "text": "Tracking key metrics, pruning low-performers, scaling winning creatives." },
+      { "title": "Business Growth", "text": "Generating predictable qualified leads and expanding sales pipeline." }
+    ],
+    "note": "Advertising drives interested potential customers to your door, but final sales also depend on your offer value, pricing, profile or landing page, and prompt response time."
+  },
+  "cases": {
+    "eyebrow": "Verified Performance",
+    "title": "Case Studies & Live Metrics",
+    "lead": "Real client campaigns with verifiable Meta Ads Manager results: niches, challenges, ad spend, and cost per lead.",
+    "labels": {
+      "niche": "Niche",
+      "task": "Objective",
+      "solution": "Strategy",
+      "budget": "Budget",
+      "result": "Outcome"
+    },
+    "zoomHint": "Click to expand",
+    "zoomBtn": "Enlarge screenshot",
+    "screenshotAlt": "Meta Ads Manager dashboard proof",
+    "screenshot": "Ads Manager Dashboard"
+  },
+  "about": {
+    "eyebrow": "About the Specialist",
+    "title": "Meet Your Targetologist: Kamila",
+    "text": "Targeted advertising specialist for Instagram and Facebook (Meta Ads). Helping small and medium businesses build predictable, cost-effective customer acquisition channels. My core principle is data-driven execution: every creative, ad set, and audience is validated with actual dashboard figures.",
+    "facts": [
+      { "label": "Specialization", "value": "Meta Ads: Instagram & Facebook" },
+      { "label": "Proven Niches", "value": "Ateliers & Fashion, Local Services, Wellness, HR Recruiting, Media Digitization" },
+      { "label": "Methodology", "value": "Audience segmentation, creative testing, cost-per-lead optimization" },
+      { "label": "Collaboration", "value": "Direct Ads Manager reporting, personal communication via Telegram" }
+    ],
+    "photoAlt": "Kamila — Meta Ads Targetologist"
+  },
+  "reviews": {
+    "eyebrow": "Client Proof",
+    "title": "Client Reviews",
+    "lead": "Feedback from business owners on collaboration, lead flow, and campaign outcomes.",
+    "leaveBtn": "Leave a Review",
+    "loading": "Loading client reviews...",
+    "empty": "No reviews yet. Be the first to share your experience!",
+    "formTitle": "Leave a Review",
+    "formLead": "Share your experience working together. Reviews appear on the site after brief moderation.",
+    "nameLabel": "Your Name & Business / Niche",
+    "namePlaceholder": "e.g., Sarah, Home Decor Studio",
+    "ratingLabel": "Rating",
+    "textLabel": "Review Text",
+    "textPlaceholder": "What did you appreciate most? What results did you see?...",
+    "submitBtn": "Submit Review",
+    "successTitle": "Thank You for Your Feedback!",
+    "successText": "Your review has been submitted and will appear on the site after verification."
+  },
+  "contacts": {
+    "eyebrow": "Contact",
+    "title": "Let's Discuss Your Project",
+    "text": "Send me a message on Telegram with a brief overview of your business and goal. I will look over your current presence and advise on the most effective starting strategy and budget.",
+    "action": "Message on Telegram",
+    "channelsTitle": "Direct Channels",
+    "telegram": {
+      "name": "Telegram",
+      "desc": "Quick responses, project discussion, and calls",
+      "action": "Open chat"
+    },
+    "instagram": {
+      "name": "Instagram",
+      "desc": "Daily workflow, quick breakdowns, and direct",
+      "action": "View profile"
+    }
+  },
+  "footer": { "rights": "All rights reserved" },
+  "notFound": {
+    "badge": "HTTP 404 · AUDIENCE NOT FOUND",
+    "title": "Looks like this click missed the funnel",
+    "text": "Even Meta's smart algorithms occasionally encounter routing errors. The page you are looking for has moved, was removed, or never existed in the campaign setup.",
+    "back": "Return to Homepage",
+    "telegram": "Contact via Telegram",
+    "log": "LOG // STATUS: 404_TARGET_LOST // AUDIENCE_SIZE: 0 // CTR: 0.00% // CPM: $0.00 // BUDGET_SAVED: 100%"
+  }
+}
