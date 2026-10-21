@@ -1,6 +1,6 @@
 {
   "_comment": "Единое место для адреса сайта, контактов и включения функций. Значения REPLACE_ME build.js покажет предупреждением.",
-  "siteUrl": "https://REPLACE_ME.pages.dev",
+  "siteUrl": "https://targetolog-web.pages.dev/",
   "defaultLang": "ru",
   "langs": ["ru", "uz", "en"],
   "brandName": "Камила",
