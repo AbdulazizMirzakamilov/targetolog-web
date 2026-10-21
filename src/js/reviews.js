@@ -10,7 +10,7 @@ import {
   addDoc,
   serverTimestamp
 } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js';
-import { firebaseConfig, isConfigured } from './firebase-config.js';
+import { firebaseConfig, isConfigured } from './firebase-config.js?v=2';
 
 const reviewsContainer = document.getElementById('reviews-list');
 const modal = document.getElementById('review-modal');
@@ -80,7 +80,7 @@ async function loadReviews() {
         : '';
 
       return `
-        <article class="review-card" data-reveal>
+        <article class="review-card">
           <div class="review-card-head">
             <div>
               <strong class="review-author">${esc(data.name)}</strong>

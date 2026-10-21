@@ -466,9 +466,9 @@ a { color: inherit; }
 }
 .review-text {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   line-height: 1.6;
-  color: var(--color-text-dim);
+  color: var(--color-text);
   flex-grow: 1;
 }
 .review-proof {
@@ -558,33 +558,43 @@ a { color: inherit; }
 .form-group label {
   font-size: 0.8125rem;
   font-family: var(--font-mono);
-  color: var(--color-text-dim);
+  color: #cbd5e1;
 }
 .form-group input[type="text"],
 .form-group textarea {
-  background: var(--color-bg);
-  border: 1px solid var(--color-line);
+  background-color: #070c1e !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  caret-color: var(--color-accent) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
   border-radius: var(--radius-sm);
-  color: var(--color-text);
-  padding: 10px 14px;
+  padding: 12px 14px;
   font-family: var(--font-sans);
   font-size: 0.9375rem;
-  transition: border-color .18s;
+  line-height: 1.5;
+  transition: border-color .18s, box-shadow .18s;
   width: 100%;
   box-sizing: border-box;
 }
+.form-group input[type="text"]::placeholder,
+.form-group textarea::placeholder {
+  color: #94a3b8 !important;
+  -webkit-text-fill-color: #94a3b8 !important;
+  opacity: 1 !important;
+}
 .form-group input[type="text"]:focus,
 .form-group textarea:focus {
-  border-color: var(--color-accent);
-  outline: none;
+  border-color: var(--color-accent) !important;
+  box-shadow: 0 0 0 2px rgba(245, 181, 68, 0.25) !important;
+  outline: none !important;
 }
 .rating-picker {
   display: flex;
   gap: var(--s3);
   flex-wrap: wrap;
-  background: var(--color-bg);
-  padding: 8px 12px;
-  border: 1px solid var(--color-line);
+  background: #070c1e;
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: var(--radius-sm);
 }
 .rating-picker label {

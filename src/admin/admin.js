@@ -18,7 +18,7 @@ import {
   addDoc,
   serverTimestamp
 } from 'https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore.js';
-import { firebaseConfig, isConfigured } from '/assets/firebase-config.js';
+import { firebaseConfig, isConfigured } from '/assets/firebase-config.js?v=2';
 
 // DOM элементы
 const authSection = document.getElementById('auth-section');
