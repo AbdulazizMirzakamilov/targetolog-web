@@ -5,7 +5,6 @@ import {
   collection,
   query,
   where,
-  orderBy,
   limit,
   getDocs,
   addDoc,
@@ -45,11 +44,11 @@ async function loadReviews() {
   }
 
   try {
+    // Запрашиваем одобренные отзывы без составного индекса (сортируем в памяти JS)
     const q = query(
       collection(db, 'reviews'),
       where('status', '==', 'approved'),
-      orderBy('createdAt', 'desc'),
-      limit(20)
+      limit(50)
     );
     const snap = await getDocs(q);
 
@@ -61,16 +60,26 @@ async function loadReviews() {
       return;
     }
 
-    const items = [];
+    const docsList = [];
     snap.forEach((doc) => {
-      const data = doc.data();
+      docsList.push({ id: doc.id, ...doc.data() });
+    });
+
+    // Сортировка по времени от новых к старым
+    docsList.sort((a, b) => {
+      const timeA = a.createdAt?.toMillis ? a.createdAt.toMillis() : (a.createdAt ? new Date(a.createdAt).getTime() : 0);
+      const timeB = b.createdAt?.toMillis ? b.createdAt.toMillis() : (b.createdAt ? new Date(b.createdAt).getTime() : 0);
+      return timeB - timeA;
+    });
+
+    const items = docsList.map((data) => {
       const stars = '★'.repeat(Math.max(1, Math.min(5, data.rating || 5))) +
                     '☆'.repeat(Math.max(0, 5 - (data.rating || 5)));
       const dateStr = data.createdAt?.toDate
         ? data.createdAt.toDate().toLocaleDateString(lang, { day: 'numeric', month: 'short', year: 'numeric' })
         : '';
 
-      items.push(`
+      return `
         <article class="review-card" data-reveal>
           <div class="review-card-head">
             <div>
@@ -82,7 +91,7 @@ async function loadReviews() {
           <p class="review-text">${esc(data.text)}</p>
           ${data.photoUrl ? `<div class="review-proof"><img src="${esc(data.photoUrl)}" alt="Скриншот отзыва" loading="lazy"></div>` : ''}
         </article>
-      `);
+      `;
     });
 
     reviewsContainer.innerHTML = items.join('');
