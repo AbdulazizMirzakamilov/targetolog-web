@@ -1,0 +1,167 @@
+{
+  "lang": "uz",
+  "langName": "UZ",
+  "ogLocale": "uz_UZ",
+  "meta": {
+    "title": "Kamila · Meta Ads targetologi: Instagram va Facebook reklamasi",
+    "description": "Instagram va Facebook’dan biznesingizga maqsadli mijozlar va arizalar: strategiyaga asoslangan reklama, Meta Ads & Telegram Ads, Google Ads sertifikatsiyasi. Telegram yoki Instagram’da bog‘laning."
+  },
+  "a11y": {
+    "skip": "Mazmunga o‘tish",
+    "menu": "Menyu",
+    "langSwitch": "Sayt tili",
+    "mainNav": "Asosiy navigatsiya",
+    "illustration": "Mijozlarni jalb qilish voronkasi sxemasi"
+  },
+  "nav": {
+    "cases": "Keyslar",
+    "about": "Men haqimda",
+    "what": "Qanday ishlayman",
+    "reviews": "Fikrlar",
+    "contacts": "Aloqa"
+  },
+  "cta": {
+    "discuss": "Telegram’da yozish",
+    "instagram": "Mening Instagramim",
+    "discussNote": "Vositachilarsiz to‘g‘ridan-to‘g‘ri aloqa",
+    "cases": "Keyslar va raqamlarni ko‘rish"
+  },
+  "hero": {
+    "status": "Meta Ads targetologi · Kamila",
+    "title": "Instagram & Facebook orqali biznesingizga maqsadli mijozlar va arizalar oqimi",
+    "lead": "Reklamani aniq natija va daromadga yo‘naltiraman: har bir lid narxini hisoblayman, kreativlarni sinayman va shunchaki quruq kliklar emas, to‘lovga qodir real mijozlarni jalb qilaman.",
+    "badges": [
+      { "text": "Target va digital-marketingda 3 yillik tizimli tajriba" },
+      { "text": "Meta Ads (Instagram & FB) + Telegram Ads yo‘lga qo‘yish" },
+      { "text": "Google Ads rasmiy sertifikatsiyasi" }
+    ],
+    "funnel": {
+      "views": "Ko‘rsatuvlar",
+      "clicks": "Kliklar",
+      "leads": "Murojaatlar"
+    },
+    "caption": "Voronka: maqsadli qamrovdan xaridor bilan muloqotgacha"
+  },
+  "what": {
+    "eyebrow": "Strategiya va jarayon",
+    "title": "Reklama kabinet tugmalaridan emas, strategiyadan boshlanadi",
+    "lead": "Hatto texnik jihatdan to‘g‘ri sozlangan reklama ham, agar biz bozorga nima taklif qilayotganimizni va bu mijozni nima uchun qiziqtirishi kerakligini tushunmasak, o‘z samarasini bermaydi. Men reklamaga shunchaki sozlamalar emas, balki mahsulot qiymati, auditoriya va pozitsionerlash orqali qarayman.",
+    "stepsLabel": "Bosqich",
+    "steps": [
+      {
+        "title": "Biznes va mahsulotni chuqur tahlil qilish",
+        "text": "Reklamani yoqishdan oldin biznesning o‘zini tushunib olish zarur: qanday tovar yoki xizmat taklif etilmoqda, ular kimga kerak va mijozning qaysi muammosini hal qiladi."
+      },
+      {
+        "title": "Raqobatchilardan ajralib turish va kuchli taklif",
+        "text": "Kompaniya raqobatchilardan nimasi bilan ajralib turishini aniqlaymiz: nima uchun mijoz aynan sizni tanlashi kerak? Biznesning auditoriya uchun haqiqatan muhim bo‘lgan ustunligini topamiz."
+      },
+      {
+        "title": "Kreativlar, matnlar va qiymatni yetkazish",
+        "text": "Ushbu ustunlikni shakllantirib, reklama videolari, matnlari va aniq takliflar orqali maqsadli mijozga yetkazamiz."
+      },
+      {
+        "title": "Yoqish, bog‘lamalarni sinash va kengaytirish",
+        "text": "Meta Ads va Telegram Ads kampaniyalarini ishga tushiramiz, keraksiz murojaatlarni filtrlaymiz va o‘zini oqlovchi bog‘lamalarni (x4–x9) miqyoslaymiz."
+      }
+    ],
+    "consult": {
+      "badge": "Biznesingiz tahlilidan boshlaymiz",
+      "title": "Instagram-sahifangiz va reklama tayyorgarligi auditi",
+      "text": "Konsultatsiyada Instagram-profilingiz va reklama tayyorgarligingizni tahlil qilamiz: taklifingiz qanchalik tushunarliligi, raqobatchilar oldidagi pozitsiyangiz va mijozlarni jalb qilishga nima xalal berayotganini aniqlaymiz. Kuchli va zaif tomonlarni topib, reklama yoqishdan oldin nimalarni yaxshilash kerakligini belgilab olamiz.",
+      "btnText": "Telegram’da tahlilga yozilish",
+      "replyNote": "Telegram’da 1–2 soat ichida shaxsan javob beraman",
+      "features": [
+        { "text": "Taklifingiz va raqobatchilardan ustunlik tomonlaringizni baholash" },
+        { "text": "Instagram’da mijoz jalb qilishga to‘sqinlik qiluvchi zaif tomonlarni aniqlash" },
+        { "text": "Reklamani yoqish yoki kengaytirishdan oldingi aniq o‘sish nuqtalarini belgilash" }
+      ]
+    }
+  },
+  "cases": {
+    "eyebrow": "Faktlar va raqamlar",
+    "title": "Ads Manager’dan tasdiqlangan real keyslar",
+    "lead": "Reklama kampaniyalarining tasdiqlangan natijalari: ta’lim grantlari, arxitektura byurosi, erkaklar va ayollar liboslari do‘konlari, tibbiyot, B2B-investitsiyalar.",
+    "labels": {
+      "niche": "Soha",
+      "task": "Vazifa",
+      "solution": "Yechim",
+      "budget": "Byudjet",
+      "result": "Natija"
+    },
+    "zoomHint": "Kattalashtirish uchun bosing",
+    "zoomBtn": "Skrinshotni ko‘rish",
+    "screenshotAlt": "Meta Ads reklama kabineti skrinshoti",
+    "screenshot": "Kabinet skrinshoti"
+  },
+  "about": {
+    "eyebrow": "Men haqimda",
+    "title": "Keling, tanishamiz: Kamila",
+    "text": "Instagram va Facebook’da maqsadli target reklama bo‘yicha ixtisoslashganman, shuningdek Telegram Ads kampaniyalarini yo‘lga qo‘yaman. Maqsadim – reklamaga kiritilgan har bir dollar sizga tushunarli arizalar va savdo olib kelishi. Raqamlarga tayanaman: kabinet metrikalarini doimiy kuzataman, yangi kreativlarni sinayman va oqlanishga qarab optimallashtiraman.",
+    "facts": [
+      {
+        "label": "Reklamadagi tajriba",
+        "value": "Meta Ads va Telegram Ads bo‘yicha 3 yillik tizimli amaliyot"
+      },
+      {
+        "label": "Kvalifikatsiya",
+        "value": "Google Ads rasmiy sertifikatsiyasi"
+      },
+      {
+        "label": "Sohalar bo‘yicha tajriba",
+        "value": "Ta’lim va grantlar, erkaklar va ayollar liboslari, arxitektura, tibbiyot, B2B-investorlar"
+      },
+      {
+        "label": "Yondashuv va oqlanish",
+        "value": "Strategiya va pozitsionerlashdan boshlangan reklama, x4–x9 oqlanish, kabinetlarning to‘liq ochiqligi"
+      }
+    ],
+    "photoAlt": "Kamila – Meta Ads targetologi"
+  },
+  "reviews": {
+    "eyebrow": "Mijozlar fikrlari",
+    "title": "Tadbirkorlar men bilan ishlash haqida nima deydi",
+    "lead": "Mijozlar va hamkorlarning birgalikdagi ish natijalari, reklama oqlanishi va loyihalarni yuritish haqidagi xolis fikrlari.",
+    "leaveBtn": "Fikr qoldirish",
+    "loading": "Fikrlar yuklanmoqda...",
+    "empty": "Hozircha bu yerda fikrlar yo‘q. Natijalar bilan bo‘lishgan birinchi inson bo‘ling!",
+    "formTitle": "Hamkorlik haqida fikr qoldirish",
+    "formLead": "Birgalikdagi ish va erishilgan natijalar haqida o‘z taassurotlaringiz bilan bo‘lishing. Fikr tekshiruvdan so‘ng saytda paydo bo‘ladi.",
+    "nameLabel": "Ismingiz va loyiha / soha",
+    "namePlaceholder": "Masalan: Aziza, liboslar studiyasi",
+    "ratingLabel": "Ish sifatini baholash",
+    "textLabel": "Fikr matni",
+    "textPlaceholder": "Qanday natijalarga erishilgani va hamkorlik qanday kechgani haqida so‘zlab bering...",
+    "submitBtn": "Fikrni yuborish",
+    "successTitle": "Fikr-mulohazangiz uchun rahmat!",
+    "successText": "Fikringiz muvaffaqiyatli yuborildi va tezkor tekshiruvdan so‘ng saytda ko‘rinadi."
+  },
+  "contacts": {
+    "eyebrow": "Aloqa",
+    "title": "Loyihangiz uchun reklamani muhokama qilamiz",
+    "text": "Menga Telegram yoki Instagram orqali yozing – sohangiz va maqsadlaringiz haqida so‘zlab bering. Profilingizni ko‘rib chiqib, samarali formatlar va taxminiy ariza narxini aytib beraman.",
+    "action": "Telegram’da yozish",
+    "channelsTitle": "To‘g‘ridan-to‘g‘ri aloqa",
+    "telegram": {
+      "name": "Telegram",
+      "desc": "Tezkor javoblar, ovozli maslahatlar va ishni boshlashni muhokama qilish",
+      "action": "Muloqotni ochish"
+    },
+    "instagram": {
+      "name": "Instagram",
+      "desc": "Ish jarayonlari, Stories’da natijalar, keyslar va Direct’da yozishmalar",
+      "action": "Profilni ochish"
+    }
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan"
+  },
+  "notFound": {
+    "badge": "404 · SAHIFA TOPILMADI",
+    "title": "Ushbu sahifa topilmadi",
+    "text": "Ehtimol, havola eskirgan yoki manzil xato kiritilgan.",
+    "log": "XATOLIK 404: Auditoriya topilmadi // Target koordinatalari noto‘g‘ri",
+    "back": "Asosiy sahifaga",
+    "telegram": "Telegram orqali bog‘lanish"
+  }
+}

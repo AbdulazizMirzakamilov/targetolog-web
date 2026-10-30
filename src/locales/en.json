@@ -1,0 +1,167 @@
+{
+  "lang": "en",
+  "langName": "EN",
+  "ogLocale": "en_US",
+  "meta": {
+    "title": "Kamila · Meta Ads Specialist: Targeted Instagram & Facebook Advertising",
+    "description": "Driving qualified customer leads and revenue from Instagram & Facebook: strategy-first approach, Meta Ads & Telegram Ads, Google Ads certification. Connect on Telegram or Instagram."
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "langSwitch": "Site language",
+    "mainNav": "Main navigation",
+    "illustration": "Customer acquisition funnel illustration"
+  },
+  "nav": {
+    "cases": "Cases",
+    "about": "About",
+    "what": "How I Work",
+    "reviews": "Reviews",
+    "contacts": "Contact"
+  },
+  "cta": {
+    "discuss": "Message on Telegram",
+    "instagram": "My Instagram",
+    "discussNote": "Direct communication without intermediaries",
+    "cases": "Explore Cases & Metrics"
+  },
+  "hero": {
+    "status": "Meta Ads Specialist · Kamila",
+    "title": "Driving qualified leads and paying customers from Instagram & Facebook for your business",
+    "lead": "I manage advertising campaigns focused on profitability and ROI: tracking cost per inquiry, testing creative angles, and acquiring real buyers rather than empty clicks.",
+    "badges": [
+      { "text": "3 years of proven experience in performance marketing & ads" },
+      { "text": "Meta Ads (Instagram & FB) + Telegram Ads execution" },
+      { "text": "Official Google Ads certification" }
+    ],
+    "funnel": {
+      "views": "Impressions",
+      "clicks": "Clicks",
+      "leads": "Inquiries"
+    },
+    "caption": "Funnel: from targeted reach to a closed customer deal"
+  },
+  "what": {
+    "eyebrow": "Strategy & Process",
+    "title": "Effective advertising starts with strategy, not dashboard buttons",
+    "lead": "Even technically flawless campaigns will underperform if we don't clearly understand what we offer and why buyers should care. I treat advertising not merely as toggle adjustments in ad manager, but as foundational work on positioning, target audience empathy, and authentic product value.",
+    "stepsLabel": "Step",
+    "steps": [
+      {
+        "title": "In-depth business and product audit",
+        "text": "Before running ads, we understand the core business: what products or services are offered, who needs them, and what specific problem they solve for the customer."
+      },
+      {
+        "title": "Competitive differentiation & value proposition",
+        "text": "We identify why customers should choose you over competitors: articulating the unique strengths, key offers, and advantages that resonate with buyers."
+      },
+      {
+        "title": "Creatives, copywriting & communicating value",
+        "text": "We translate strategic positioning into compelling video and visual ads, engaging copywriting, and irresistible offers delivered straight to prospects."
+      },
+      {
+        "title": "Launch, creative testing & scaling profitable angles",
+        "text": "We deploy campaigns across Meta Ads and Telegram Ads, filter unqualified leads with custom questions, reduce inquiry costs, and scale high-ROI angles (x4–x9)."
+      }
+    ],
+    "consult": {
+      "badge": "Let's start with your business audit",
+      "title": "Strategic review of your Instagram profile and advertising readiness",
+      "text": "During our consultation, we examine your Instagram presence and advertising foundation: assessing offer clarity, competitive differentiation, and identifying friction points holding back conversions. Together, we locate growth bottlenecks and outline concrete improvements prior to ad launch.",
+      "btnText": "Book a strategic consultation on Telegram",
+      "replyNote": "Direct personal response on Telegram within 1–2 hours",
+      "features": [
+        { "text": "Assessment of offer clarity and competitive market differentiation" },
+        { "text": "Identification of bottlenecks hindering customer inquiries and conversions" },
+        { "text": "Clear roadmap of growth points before launching or scaling ad spend" }
+      ]
+    }
+  },
+  "cases": {
+    "eyebrow": "Verified Metrics",
+    "title": "Real client cases with confirmed Ads Manager metrics",
+    "lead": "Documented campaign results: study-abroad grants, architecture studio, men's & women's apparel retail, healthcare, B2B investor acquisition.",
+    "labels": {
+      "niche": "Niche",
+      "task": "Objective",
+      "solution": "Strategy",
+      "budget": "Budget",
+      "result": "Results"
+    },
+    "zoomHint": "Click to expand screenshot",
+    "zoomBtn": "View screenshot",
+    "screenshotAlt": "Meta Ads Manager verified report screenshot",
+    "screenshot": "Ads Manager report"
+  },
+  "about": {
+    "eyebrow": "About Me",
+    "title": "Nice to meet you: Kamila",
+    "text": "I specialize in targeted performance advertising across Instagram and Facebook, while also running campaigns on Telegram Ads. My mission is ensuring every dollar invested generates measurable inquiries and revenue. I build on facts: analyzing real-time ad manager metrics, systematically testing fresh creatives, and scaling campaigns toward maximum ROI.",
+    "facts": [
+      {
+        "label": "Experience",
+        "value": "3 years of systematic practice across Meta Ads and Telegram Ads"
+      },
+      {
+        "label": "Credentials",
+        "value": "Official Google Ads certification"
+      },
+      {
+        "label": "Industry Niches",
+        "value": "Higher education, men's & women's fashion, architecture, wellness, B2B investors"
+      },
+      {
+        "label": "Approach & ROI",
+        "value": "Strategy-first campaigns, x4–x9 returns on ad spend, full dashboard transparency"
+      }
+    ],
+    "photoAlt": "Kamila – Meta Ads Specialist"
+  },
+  "reviews": {
+    "eyebrow": "Client Reviews",
+    "title": "What business owners say about working together",
+    "lead": "Genuine feedback from entrepreneurs and marketing partners regarding campaign execution, profitability, and communication.",
+    "leaveBtn": "Submit Review",
+    "loading": "Loading reviews...",
+    "empty": "No reviews published yet. Be the first to share your campaign results!",
+    "formTitle": "Leave feedback about cooperation",
+    "formLead": "Share your experience and results from working together. Your review will appear after quick verification.",
+    "nameLabel": "Your Name & Business / Niche",
+    "namePlaceholder": "e.g., Aziza, Custom Dress Studio",
+    "ratingLabel": "Work Rating",
+    "textLabel": "Review Text",
+    "textPlaceholder": "Describe the results achieved and your experience collaborating...",
+    "submitBtn": "Send Review",
+    "successTitle": "Thank you for your feedback!",
+    "successText": "Your review has been sent and will appear on the site shortly after review."
+  },
+  "contacts": {
+    "eyebrow": "Contact",
+    "title": "Let's discuss advertising for your business",
+    "text": "Drop me a message on Telegram or Instagram – share your industry and business goals. We will review your profile, explore effective angles, and project estimated lead costs.",
+    "action": "Message on Telegram",
+    "channelsTitle": "Direct Channels",
+    "telegram": {
+      "name": "Telegram",
+      "desc": "Quick responses, voice consultations, and launch preparation",
+      "action": "Open Dialogue"
+    },
+    "instagram": {
+      "name": "Instagram",
+      "desc": "Daily workflow, live results in Stories, case studies, and Direct DMs",
+      "action": "Open Profile"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "notFound": {
+    "badge": "404 · PAGE NOT FOUND",
+    "title": "Page not found",
+    "text": "The page you are looking for might have been moved or removed.",
+    "log": "ERROR 404: Audience Not Found // Target coordinates invalid",
+    "back": "Return Home",
+    "telegram": "Contact on Telegram"
+  }
+}

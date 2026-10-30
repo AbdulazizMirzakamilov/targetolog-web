@@ -1,0 +1,20 @@
+{
+  "name": "kamila-target",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Персональный сайт-портфолио таргетолога Meta Ads (Instagram & Facebook): трёхъязычный лендинг (RU / UZ / EN), подтверждённые кейсы, Cloudflare Pages & Functions и панель модерации отзывов.",
+  "scripts": {
+    "build:css": "tailwindcss -i src/css/input.css -o dist/assets/styles.css --minify",
+    "build:html": "node scripts/build.js",
+    "build": "node scripts/build.js && npm run build:css",
+    "dev": "node scripts/dev.js",
+    "optimize:images": "node scripts/convert-webp.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.3",
+    "terser": "^5.51.2"
+  }
+}

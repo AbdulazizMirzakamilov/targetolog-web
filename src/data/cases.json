@@ -1,0 +1,296 @@
+[
+  {
+    "id": "case-grant-talim",
+    "placeholder": false,
+    "niche": {
+      "ru": "Grant Talim – Образовательные гранты",
+      "uz": "Grant Talim – Ta’lim grantlari",
+      "en": "Grant Talim – Educational Grants"
+    },
+    "statVal": "1 833",
+    "statLbl": {
+      "ru": "лида привлечено",
+      "uz": "olingan lidlar soni",
+      "en": "qualified leads acquired"
+    },
+    "costVal": "x9",
+    "costLbl": {
+      "ru": "окупаемость рекламы (ROI)",
+      "uz": "reklama oqlanish ko‘rsatkichi",
+      "en": "advertising ROI"
+    },
+    "task": {
+      "ru": "Привлечь абитуриентов и их родителей, заинтересованных в получении зарубежного образования через гранты, и повысить узнаваемость проекта в Узбекистане",
+      "uz": "Xorijiy ta’lim grantlariga qiziquvchi abituriyentlar va ularning ota-onalarini jalb qilish hamda loyihaning O‘zbekistondagi taniqliligini oshirish",
+      "en": "Attract prospective students and parents interested in study-abroad grants while driving brand awareness across Uzbekistan"
+    },
+    "solution": {
+      "ru": "Разделили продвижение на лидогенерацию и рост профиля, запустили связку Meta Ads + Telegram-бот, сегментировали аудиторию и усилили лид-форму квалифицирующими вопросами для отсева нецелевых обращений",
+      "uz": "Reklamani lidlar jalb qilish va profil obunachilarini ko‘paytirishga ajratdik, Meta Ads + Telegram-bot tizimini qurdik, auditoriyani segmentlab, sifatsiz arizalarni filtrlash uchun savollar qo‘shdik",
+      "en": "Segmented campaigns into lead generation and profile growth, orchestrated a Meta Ads + Telegram bot funnel, and enhanced instant forms with qualifying questions"
+    },
+    "budget": {
+      "ru": "Системный график набора",
+      "uz": "Qabul jadvali bo‘yicha byudjet",
+      "en": "Scheduled admissions budget"
+    },
+    "result": {
+      "ru": "1 833 лида, рост аудитории примерно с 4 000 до 40 000 подписчиков, досрочное закрытие списков набора за 2–3 месяца до дедлайна и подтверждённая окупаемость x9",
+      "uz": "1 833 ta ariza, obunachilar 4 000 dan 40 000 gacha o‘sishi, qabul ro‘yxatini muddatidan 2–3 oy oldin to‘ldirish hamda x9 reklama oqlanishi",
+      "en": "1,833 leads, audience growth from 4k to 40k followers, admissions filled 2–3 months ahead of schedule, and confirmed x9 ad ROI"
+    },
+    "screenshot": "/img/cases/grant-talim.webp"
+  },
+  {
+    "id": "case-minaret",
+    "placeholder": false,
+    "niche": {
+      "ru": "Minaret Build – Архитектура и дизайн",
+      "uz": "Minaret Build – Arxitektura va dizayn",
+      "en": "Minaret Build – Architecture & Interior Design"
+    },
+    "statVal": "от $2 000",
+    "statLbl": {
+      "ru": "средний чек услуг",
+      "uz": "o‘rtacha xizmat narxi",
+      "en": "average service check"
+    },
+    "costVal": "3",
+    "costLbl": {
+      "ru": "направления под ключ",
+      "uz": "yo‘nalish bo‘yicha qamrov",
+      "en": "turnkey service areas"
+    },
+    "task": {
+      "ru": "Привлечь потенциальных клиентов на услуги архитектурного бюро и увеличить узнаваемость бренда",
+      "uz": "Arxitektura byurosi xizmatlariga maqsadli buyurtmachilar jalb qilish va brend taniqliligini oshirish",
+      "en": "Attract high-ticket prospective clients for architecture and design services while elevating brand visibility"
+    },
+    "solution": {
+      "ru": "Запуск рекламы на три направления (дизайн интерьера, ремонт, реализация под ключ), прямое привлечение обращений + воронка с лид-магнитом для отсева и прогрева, постоянное тестирование креативов",
+      "uz": "Uchta yo‘nalishga reklama (interyer dizayni, ta’mirlash, kalit ostida loyiha), to‘g‘ridan-to‘g‘ri murojaatlar va lid-magnit voronkasi orqali auditoriyani qizdirish",
+      "en": "Targeted campaigns across 3 core verticals (interior design, renovation, turnkey execution), pairing direct response ads with a qualifying lead-magnet funnel"
+    },
+    "budget": {
+      "ru": "Долгосрочное ведение",
+      "uz": "Uzoq muddatli hamkorlik",
+      "en": "Ongoing retainer"
+    },
+    "result": {
+      "ru": "Стабильный поток целевых обращений по нескольким направлениям с чеком от $2 000, рост узнаваемости бренда и качества входящих заявок",
+      "uz": "O‘rtacha cheki $2 000 dan boshlanuvchi sifatli buyurtmalar oqimi, brend obro‘si va arizalar sifatining sezilarli o‘sishi",
+      "en": "Consistent stream of qualified inquiries for deals averaging $2,000+, elevated brand awareness and higher lead quality"
+    },
+    "screenshot": "/img/cases/minaret.webp"
+  },
+  {
+    "id": "case-hiring",
+    "placeholder": false,
+    "niche": {
+      "ru": "Трудоустройство за рубежом",
+      "uz": "Xorijda ishga joylashtirish",
+      "en": "International Employment & Relocation"
+    },
+    "statVal": "751",
+    "statLbl": {
+      "ru": "начало переписки в Direct",
+      "uz": "boshlangan muloqot",
+      "en": "direct conversations initiated"
+    },
+    "costVal": "3",
+    "costLbl": {
+      "ru": "кампании + вебинарная воронка",
+      "uz": "kampaniya va vebinar voronkasi",
+      "en": "campaigns & webinar funnel"
+    },
+    "task": {
+      "ru": "Привлечь людей, заинтересованных в трудоустройстве за рубежом, и провести их от первого рекламного контакта к обращению за услугой",
+      "uz": "Xorijda ishlashga qiziqqan insonlarni jalb qilish va ularni ilk reklamadan boshlab xizmatga murojaat qilishgacha olib borish",
+      "en": "Acquire candidates seeking employment abroad and guide them through an educational nurturing funnel to an official application"
+    },
+    "solution": {
+      "ru": "Сегментация аудитории по интересам, разработка креативов под конкретные вакансии, лид-магнит и многоступенчатая вебинарная воронка для знакомства с предложением и перевода в диалог",
+      "uz": "Auditoriyani qiziqishlar bo‘yicha segmentlash, aniq vakansiyalarga mos kreativlar, qizdiruvchi lid-magnit hamda vebinar voronkasi orqali aloqaga chiqarish",
+      "en": "Interest-based candidate segmentation, vacancy-specific creatives, and a high-converting webinar funnel converting viewers into direct messaging dialogues"
+    },
+    "budget": {
+      "ru": "3 рекламные кампании",
+      "uz": "3 ta reklama kampaniyasi",
+      "en": "3 active campaigns"
+    },
+    "result": {
+      "ru": "751 начало переписки в рамках трёх кампаний; многоступенчатая воронка отсеяла нецелевых кандидатов и обеспечила высокий отклик",
+      "uz": "3 ta kampaniya doirasida 751 ta sifatli boshlangan yozishma; ko‘p bosqichli voronka orqali tayyor mijozlar oqimi shakllantirildi",
+      "en": "751 initiated direct messaging conversations across 3 campaigns with high conversion fueled by the webinar funnel"
+    },
+    "screenshot": "/img/cases/hiring.webp"
+  },
+  {
+    "id": "case-herren",
+    "placeholder": false,
+    "niche": {
+      "ru": "Herren – Магазин мужской одежды",
+      "uz": "Herren – Erkaklar kiyimi do‘koni",
+      "en": "Herren – Men's Apparel Store"
+    },
+    "statVal": "8 200",
+    "statLbl": {
+      "ru": "переходов в профиль по $0.0065",
+      "uz": "profilga o‘tish ($0.0065 dan)",
+      "en": "profile visits at $0.0065"
+    },
+    "costVal": "$0.28",
+    "costLbl": {
+      "ru": "за переписку (220+ обращений)",
+      "uz": "bitta xabar narxi (220+ ariza)",
+      "en": "per message (220+ inquiries)"
+    },
+    "task": {
+      "ru": "Привлекать покупателей на ассортимент мужской одежды, увеличивать продажи и расширять постоянную аудиторию магазина в Instagram",
+      "uz": "Erkaklar kiyimi assortimentiga xaridorlarni jalb qilish, savdoni oshirish va do‘konning doimiy Instagram auditoriyasini kengaytirish",
+      "en": "Drive retail apparel sales, increase direct messaging inquiries, and expand the store's engaged Instagram buyer audience"
+    },
+    "solution": {
+      "ru": "Креативы под товары и сезонные предложения магазина, рекламные связки на сообщения в Direct, продвижение профиля для набора покупателей, постоянная оптимизация под продажи",
+      "uz": "Mavsumiy tovarlar uchun video-kreativlar, Direct’ga xabar yo‘naltirish, xaridorlarni yig‘ish uchun profilni ommalashtirish va savdoga qarab optimallashtirish",
+      "en": "Product-focused video ads, Instagram Direct message campaigns, profile visit traffic, and data-driven creative split-testing"
+    },
+    "budget": {
+      "ru": "Долгосрочное сотрудничество",
+      "uz": "Doimiy uzoq muddatli hamkorlik",
+      "en": "Long-term partnership"
+    },
+    "result": {
+      "ru": "8 200 посещений профиля за $53.68 ($0.0065 за клик), 220+ начатых переписок по цене $0.28–$0.37 за диалог, стабильная окупаемость и рост выручки магазина",
+      "uz": "8 200 ta profilga o‘tish ($53.68 xarajat bilan, bittasi $0.0065), $0.28–$0.37 dan 220+ ta yangi yozishma va do‘kon daromadining barqaror oqlanishi",
+      "en": "8,200 profile visits for $53.68 ($0.0065/visit), 220+ conversations at $0.28–$0.37 each, delivering consistent store profitability"
+    },
+    "screenshot": "/img/cases/herren.webp"
+  },
+  {
+    "id": "case-atelye",
+    "placeholder": false,
+    "niche": {
+      "ru": "Ателье – Индивидуальный пошив и платья",
+      "uz": "Atelye – Shaxsiy buyurtma va liboslar",
+      "en": "Atelier – Custom Tailoring & Dresses"
+    },
+    "statVal": "1 700+",
+    "statLbl": {
+      "ru": "начатых диалогов в Direct",
+      "uz": "Direct’da boshlangan muloqot",
+      "en": "Direct conversations started"
+    },
+    "costVal": "$0.15",
+    "costLbl": {
+      "ru": "цена переписки (окупаемость x4–x5)",
+      "uz": "bitta muloqot narxi (x4–x5)",
+      "en": "cost per message (x4–x5 ROI)"
+    },
+    "task": {
+      "ru": "Привлекать покупателей на индивидуальный пошив и продажу готовых коллекций женских платьев",
+      "uz": "Shaxsiy buyurtma asosida tikish va tayyor ayollar liboslari savdosiga doimiy mijozlarni jalb qilish",
+      "en": "Drive orders for bespoke tailoring services and catalog sales for finished women's dress collections"
+    },
+    "solution": {
+      "ru": "Сегментированные креативы под индивидуальный пошив и готовые изделия, оптимизация кампаний по стоимости начатого диалога, динамические тесты офферов",
+      "uz": "Shaxsiy tikish va tayyor liboslar uchun alohida kreativlar, boshlangan suhbat narxiga qarab kampaniyalarni doimiy optimallashtirish",
+      "en": "Split-tested creatives for bespoke vs ready-to-wear collections, focused bidding on low-cost messaging starts, and seasonal angle testing"
+    },
+    "budget": {
+      "ru": "$248.10 (в кампании на 1 700 диалогов)",
+      "uz": "$248.10 (1 700 muloqotli kampaniyada)",
+      "en": "$248.10 (in the 1,700-message campaign)"
+    },
+    "result": {
+      "ru": "1 700 начатых переписок за $248.10 по рекордной цене $0.15 за диалог, стабильная окупаемость рекламы на уровне x4–x5 и выше, постоянное сотрудничество",
+      "uz": "$248.10 evaziga 1 700 ta yozishma (bittasi $0.15 dan), reklamaning barqaror x4–x5 darajasida oqlanishi va doimiy hamkorlik",
+      "en": "1,700 conversations generated for $248.10 at just $0.15 per inquiry, sustaining x4–x5+ ROAS and long-term partnership"
+    },
+    "screenshot": "/img/cases/atelye.webp"
+  },
+  {
+    "id": "case-hidjama",
+    "placeholder": false,
+    "niche": {
+      "ru": "Hijama – Оздоровительный центр",
+      "uz": "Hijama – Sog‘lomlashtirish markazi",
+      "en": "Hijama – Wellness & Therapy Center"
+    },
+    "statVal": "508",
+    "statLbl": {
+      "ru": "начатых переписок за $115.82",
+      "uz": "boshlangan muloqot ($115.82 ga)",
+      "en": "conversations for $115.82"
+    },
+    "costVal": "$0.23",
+    "costLbl": {
+      "ru": "средняя стоимость клиента",
+      "uz": "o‘rtacha bitta mijoz narxi",
+      "en": "average cost per inquiry"
+    },
+    "task": {
+      "ru": "Увеличить количество обращений от потенциальных клиентов и обеспечить стабильное привлечение пациентов через Instagram",
+      "uz": "Mijozlar murojaatlari sonini ko‘paytirish va Instagram orqali markazga barqaror bemorlar oqimini ta’minlash",
+      "en": "Increase qualified patient inquiries and establish a predictable patient acquisition pipeline via Instagram"
+    },
+    "solution": {
+      "ru": "Таргетированная реклама на целевую аудиторию по гео и интересам, тестирование понятных визуальных креативов и предложений, оптимизация по стоимости диалога (оценка качества объявлений Meta 100/100)",
+      "uz": "Manzilli aniq target reklama, tushunarli tibbiy-kreativlar, muloqot narxi bo‘yicha optimallashtirish (Meta e’lonlar sifati 100/100 ball)",
+      "en": "Precision geo and interest targeting, benefit-driven educational creatives, and campaign optimization yielding 100/100 Meta account health score"
+    },
+    "budget": {
+      "ru": "$115.82 за кампанию",
+      "uz": "Kampaniya uchun $115.82",
+      "en": "$115.82 ad spend"
+    },
+    "result": {
+      "ru": "508 начатых переписок в приложении со средней ценой $0.23 за обращение, быстрая окупаемость и непрерывное долгосрочное сотрудничество",
+      "uz": "Ilovada 508 ta boshlangan muloqot, bittasi o‘rtacha $0.23 dan, tezkor xarajatlar qoplanishi va doimiy mijozlar bazasi",
+      "en": "508 direct inquiries generated at an average $0.23 each, rapid client payback, and ongoing cooperation"
+    },
+    "screenshot": "/img/cases/hidjama.webp"
+  },
+  {
+    "id": "case-ecostudio",
+    "placeholder": false,
+    "niche": {
+      "ru": "Eco Studio – Оцифровка архивов & B2B-инвесторы",
+      "uz": "Eco Studio – Arxivlarni raqamlashtirish & B2B investorlar",
+      "en": "Eco Studio – Media Digitization & B2B Investors"
+    },
+    "statVal": "B2C + B2B",
+    "statLbl": {
+      "ru": "два параллельных направления",
+      "uz": "ikkita parallel yo‘nalish",
+      "en": "dual B2C & B2B channels"
+    },
+    "costVal": "x3+",
+    "costLbl": {
+      "ru": "высокая окупаемость и сделки",
+      "uz": "yuqori oqlanish va kelishuvlar",
+      "en": "high ROI & closed deals"
+    },
+    "task": {
+      "ru": "Привлекать розничных клиентов на оцифровку видеокассет и дисков, а также находить потенциальных инвесторов для бизнес-проектов компании",
+      "uz": "Eski videokasseta va disklarni raqamlashtirishga buyurtmachilar hamda kompaniya loyihalari uchun investorlar topish",
+      "en": "Acquire retail customers for archival video digitization and secure prospective investors for company expansion"
+    },
+    "solution": {
+      "ru": "Разделение аудиторий: эмоциональные B2C-креативы о сохранении семейных архивов + отдельная B2B-лидогенерация под инвестиционные предложения с сегментацией предпринимателей",
+      "uz": "Auditoriyani ajratish: oilaviy xotiralarni saqlash bo‘yicha emotsional B2C-reklama va tadbirkorlar uchun alohida B2B investitsion takliflar",
+      "en": "Audience bifurcation: emotional B2C nostalgia ads for family archives plus segmented B2B lead generation targeting accredited private investors"
+    },
+    "budget": {
+      "ru": "Системный тестовый запуск",
+      "uz": "Tizimli sinov byudjeti",
+      "en": "Targeted test spend"
+    },
+    "result": {
+      "ru": "Поток заказов на оцифровку, закрытые сделки с привлечёнными инвесторами по данным проекта и подтверждённая высокая окупаемость инвестиций",
+      "uz": "Raqamlashtirishga doimiy buyurtmalar, jalb qilingan investorlar bilan tuzilgan shartnomalar va loyihaning yuqori daromadliligi",
+      "en": "Steady inflow of retail digitization orders and successfully closed investor agreements with high ROI"
+    },
+    "screenshot": "/img/cases/ecostudio.webp"
+  }
+]
